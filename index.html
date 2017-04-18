@@ -1,12 +1,129 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Глейси</title>
+	</head>
+	<body>
+		<header class="top-main">
+			<div class="top-case">
+				<a href="#" class="logo"></a>
+				<nav class="navigation">
+					<ul>
+						<li>
+							<a href="#">Каталог</a>
+						</li>
+						<li>
+							<a href="#">Доставка и оплата</a>
+						</li>
+						<li>
+							<a href="#">О Компании</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="user">
+				<input type="text" name="search"> <!--не знаю как сделась этот поиск, -->
+				<a href="#" class="login"></a> <!--и это-->
+				<a href="#" class="basket"></a>
+			</div>
+		</header>
+		<main class="senior">
+			<p class="time">С 10 до 20, ежедневно<br> <b>8 812 450-25-25</b></p>
+			<div class="total-logo">
+				<img src="http://placehold.it/150x100" alt="ice-cream">
+				<h1>Крем-брюле и пломбир с малиновым джемом</h1> <!--не уверенна заголовок и ссылку перед тем как закрыть этот див или после-->
+				<a href="#">Давайте оба!</a>
+			</div>
+			<section class="taste">
+				<div class="raspberry">
+					<img src=http://placehold.it/150x100 alt="">
+					<h2>Малинка даром!</h2>
+					<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно. </p>
+					<a href="#" class="btn">Хочу варенье!</a>
+				</div>
+				<div class="choco">
+					<img src=http://placehold.it/150x100 alt="">
+					<h2>Шоколадки даром!</h2>
+					<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+					<a href="#" class="btn">Хочу шоколадки!</a>
+				</div>
+			</section>
+			<section class="taste-2">
+				<div class="orange">
+					<img src=http://placehold.it/150x100 alt="">
+					<b>310 Р/кг</b> <!-- не уверенна правильно ли поставила этот тег, и еще где брать символ рубля???-->
+					<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+				</div>
+				<div class="coffe"> 
+					<img src=http://placehold.it/150x100 alt="">
+					<b>380 Р/кг</b>
+					<p>Сливочно-кофейное с кусочками шоколада </p>
+				</div>
+				<div class="strawberry">
+					<img src="http://placehold.it/150x100" alt="">
+					<b>355 Р/кг</b>
+					<p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+				</div>
+				<div class="caramel">
+					<img src="http://placehold.it/150x100" alt="">
+					<b>415 Р/кг</b>
+					<p>Сливочное крем-брюле с карамельной подливкой</p>
+				</div>
+			</section>
+			<section class="about">
+				<h3>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
+				<img src="http://placehold.it/150x100" alt="" class="icon"> <!-- Нужно ли иконки и абзацы обернуть в дивы?-->
+				<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+				<img src="http://placehold.it/150x100" alt="" class="icon">
+				<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+				<img src="http://placehold.it/150x100" alt="" class="icon">
+				<p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+				<img src="http://placehold.it/150x100" alt="" class="icon">
+				<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+			</section>
+			<div class="new">
+				<p>Новое в нашем блоге</p>
+				<h3 class="method">10 способов сервировки фруктовых щербетов к столу</h3>
+				<img src="http://placehold.it/150x100" alt="" class="logo-ice">
+			</div>
+			<div class="post">
+				<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+				<form class="mail" action="https://echo.htmlacademy.ru" method="post">
+					<input type="text" name="e-mail"> <button class="send" type="submit"></button>  			
+				</form>
+			</div> <!-- Еще вопрос нужно ли эти два дива в section заключить? Или в общий див?-->
+			<div class="location">
+				<img src="http://placehold.it/150x100" alt="" class="map">
+				<img src="http://placehold.it/150x100" alt="" class="sundae">
+				<div class="data">
+					<span class="info">Адрес главного офиса<br> и офлайн магазина:</span>
+					<p class="address">ул. Большая Конюшенная<br> 19/8, Санкт-Петербург</p>
+					<span class="info">Для заказов по телефону:</span>
+					<span class="phone">8 812 450-25-25</span>
+					<span class="info">(с 10 до 20 ежедневно)</span>
+					<a href="#" class="feedback">Форма обратной связи</a><!--Я понимаю что это форма,а не ссылка.Просто не понимаю как ее делать???-->
+				</div>
+			</div>
+		</main>
+		<footer class="bottom-main">
+			<section class="social">
+				<a href="#" class="tw"><img src="http://placehold.it/50x50" alt=""></a>
+				<a href="#" class="inst"><img src="http://placehold.it/50x50" alt=""></a>  	
+				<a href="#" class="fb"><img src="http://placehold.it/50x50" alt=""></a>	
+				<a href="#" class="vk"><img src="http://placehold.it/50x50" alt=""></a>
+			</section>  
+			<section class="link">
+				<img src="http://placehold.it/20x20" alt="">
+				<a href="#" class="contact">Для поставщиков</a>
+				<a href="#" class="contact">О производстве</a>
+				<a href="#" class="contact">Наши документы</a>
+				<a href="#" class="contact">Экологические стандарты</a>
+			</section>	
+			<section class="made">  
+				<img src="http://placehold.it/80x50" class="logo-html" alt="">				
+				Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> 2017 <!-- где взять символ???-->
+			</section>
+		</footer>   
+	</body>
 </html>
