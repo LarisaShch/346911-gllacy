@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Барбершоп</title>
+	</head>
+	<body>
+		<header class="top-main">
+			<div class="top-case">
+				<a href="#" class="logo"></a>
+				<nav class="navigation">
+					<ul class="menu">
+						<li class="menu-item active"> <!--здесь же правильно доп класс, что он активный?-->
+							<a href="#" class="menu-item-link">Каталог</a>
+							<ul class="submenu">
+								<li class="submenu-item">
+									<a href="#" class="submenu-item-link submenu-item-main">Новинки</a> 
+								</li>
+								<li>
+									<a href="#" class="submenu-item-link">Сливочное</a>										
+								</li>
+								<li>
+									<a href="#" class="submenu-item-link">Щербеты</a>
+								</li>
+								<li>
+									<a href="#" class="submenu-item-link">Фруктовый лед</a>
+								</li>
+								<li>
+									<a href="#" class="submenu-item-link">Мелорин</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Доставка и оплата</a>
+						</li>
+						<li>
+							<a href="#">О Компании</a>
+						</li>
+					</ul>
+				</nav>			
+				<div class="user">
+					<div class="search-block">
+						<a href="#" class="search-block-trigger"></a>
+						<form class="search-form" action="#" method="post">
+							<input type="search" placeholder="Что ищем?">
+							<button type="submit" class="submit-btn hidden"></button> 
+						</form>
+					</div> 
+					<div class="login">
+						<a href="#">Вход</a>
+						<form class="login-enter" action="#" method="post">								
+							<input type="email" name="e-mail" placeholder="Электронная почта">
+							<input type="password" name="password" placeholder="Пароль">
+							<button type="submit" class="login-enter-btn">Войти</button>
+							<a href="#">Забыли пароль?</a>
+							<a href="#">Новая регистрация</a>
+						</form> 
+					</div>
+					<div class="basket-order">
+						<a href="#">2 товара</a>
+						<div class="order">
+							<div class="order-1">
+								<button type="submit">Убрать</button> <!--я написала "убрать"" пока крестик ведь в css ставить?-->
+								<a href="#">Пломбир с апельсиновым джемом</a>
+								<span>1,5 кг. x <span class="color">200 руб.</span></span> <span class="total">300 руб.</span>									
+							</div>
+							<div class="order-2">
+								<button type="submit">Убрать</button>
+								<a href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
+								<span>1,5 кг. x <span class="color">300 руб.</span></span> <span class="total">450 руб.</span>
+							</div>
+						</div>
+						<hr>
+						<div class="result">
+							<span class="summary">Итого: 750 руб.</span>
+							<a href="#">Оформить заказ</a> <!--это ведь ссылка правильно?-->
+						</div>
+					</div>
+					<div class="time">
+						<p>С 10 до 20, ежедневно<br> <b>8 812 450-25-25</b></p>
+					</div>
+				</div>
+			</div>		
+		</header>
+		<main class="index-page"> <!--Вопрос: класс мейну давать одинаковый на каждой странице? Или разный?-->
+			<ul class="bread-crumbs">
+				<li>
+					<a href="#">Главная</a>
+				</li>
+				<li>
+					<a href="#">Каталог</a>
+				</li>
+				<li>
+					<a href="#">Сливочное</a>
+				</li>
+			</ul>
+			<h1>Сливочное мороженое</h1>
+			<div class="forms">
+				<form action="#" method="post"> <!--рамку у фильтров в css делать?-->
+					<div class="sort">
+						<p>Сортировка:</p>
+						<select class="sort-items">
+							<option>по популярности</option>
+							<option>сначала недорогие</option>
+							<option>сначала дорогие</option>
+							<option>по жирности</option>
+						</select>					
+					</div>
+					<div class="price-filter"><!--как дклать такой ползунок с двумя джойстиками?-->
+						<p>Цена: 100 руб.-500 руб.</p>
+						<input type="range" name="range" min="0" max="1000">
+					</div>	
+					<div class="fat">
+						<p>Жирность:</p>
+						<input type="radio" name="fat" value="0%">
+						<label>0%</label>
+						<input type="radio" name="10%" class="fat-active">
+						<label>до 10%</label>
+						<input type="radio" name="30%">
+						<label>до 30%</label>
+						<input type="radio" name="more 30%">
+						<label>выше 30%</label>
+					</div>
+					<div class="fills">
+						<p>Наполнители:</p>
+						<input type="checkbox" name="chocolate">
+						<label>шоколадные</label>
+						<input type="checkbox" name="sugar">
+						<label>сахарные присыпки</label>
+						<input type="checkbox" name="fruits">
+						<label>фрукты</label>
+						<input type="checkbox" name="syrups">
+						<label>сиропы</label>
+						<input type="checkbox" name="jam">
+						<label>джемы</label>
+					</div>
+					<button type="submit">Применить</button>
+				</form>
+			</div>
+			<div class="catalog">
+				<article class="items">
+					<img src="http://placehold.it/150x100" alt="">
+					<p>310 <span class="rubles">Р</span>/кг</p>
+					<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+					<button type="submit">Быстрый просмотр</button>
+				</article>
+				<article class="items">
+					<img src="http://placehold.it/150x100" alt="">
+					<p>380 <span class="rubles">Р</span>/кг</p>
+					<a href="#">Сливочно-кофейное с кусочками шоколада</a>
+					<button type="submit">Быстрый просмотр</button>
+				</article>
+				<article class="items">
+					<img src="http://placehold.it/150x100" alt="">
+					<p>355<span class="rubles">Р</span>/кг</p>
+					<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+					<button type="submit">Быстрый просмотр</button>
+				</article>
+				<article class="items">
+					<img src="http://placehold.it/150x100" alt="">
+					<p>415<span class="rubles">Р</span>/кг</p>
+					<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+					<button type="submit">Быстрый просмотр</button>
+				</article>
+				<article class="items">
+					<img src="http://placehold.it/150x100" alt="">
+					<p>325<span class="rubles">Р</span>/кг</p>
+					<a href="#">Сливочное с брусничным джемом</a>
+					<button type="submit">Быстрый просмотр</button>					
+				</article>
+				<article class="items">
+					<img src="http://placehold.it/150x100" alt="">
+					<p>410<span class="rubles">Р</span>/кг</p>
+					<a href="#">Сливочно-черничное с цельными ягодами черники</a>
+					<button type="submit">Быстрый просмотр</button>
+				</article>
+				<article class="items">
+					<img src="http://placehold.it/150x100" alt="">
+					<p>375<span class="rubles">Р</span>/кг</p>
+					<a href="#">Сливочно-лимонное с карамельной присыпкой</a>
+					<button type="submit">Быстрый просмотр</button>
+				</article>
+				<article class="items">
+					<img src="http://placehold.it/150x100" alt="">
+					<p>320<span class="rubles">Р</span>/кг</p>
+					<a href="#">Сливочное с шоколадной стружкой</a>
+					<button type="submit">Быстрый просмотр</button>
+				</article>
+				<article class="items">
+					<img src="http://placehold.it/150x100" alt="">
+					<p>440<span class="rubles">Р</span>/кг</p>
+					<a href="#">Сливочно-ванильное с кусочками шоколада</a>
+					<button type="submit">Быстрый просмотр</button>
+				</article>
+				<article class="items">
+					<img src="http://placehold.it/150x100" alt="">
+					<p>435<span class="rubles">Р</span>/кг</p>
+					<a href="#">Сливочноe с ментоловым сиропом</a>
+					<button type="submit">Быстрый просмотр</button>
+				</article>
+				<article class="items">
+					<img src="http://placehold.it/150x100" alt="">
+					<p>355<span class="rubles">Р</span>/кг</p>
+					<a href="#">Сливочное с кусочками черного шоколада</a>
+					<button type="submit">Быстрый просмотр</button>					
+				</article>
+				<article class="items">
+					<img src="http://placehold.it/150x100" alt="">
+					<p>420<span class="rubles">Р</span>/кг</p>
+					<a href="#">Сливочное с мятным сиропом</a>
+					<button type="submit">Быстрый просмотр</button>
+				</article>
+			</div>
+			<ul>
+				<li>
+					<a href="#">Назад</a><!--здесь я поставила "назад" и "вперед" потому что на знак больше-меньше валидатор реагирует-->
+				</li>
+				<li class="active-2">1</li> <!--здесь нужна ссылка или нет? И еще если у меня уже есть класс актив я же делаю актив-2 правда????-->
+				<li>
+					<a href="#">2</a>
+				</li>
+				<li>
+					<a href="#">3</a>
+				</li>
+				<li>
+					<a href="#">4</a>
+				</li>
+				<li>
+					<a href="#">5</a>
+				</li>
+				<li>
+					<a href="#">Вперед</a>
+				</li>
+			</ul>
+		</main>
+		<footer class="footer">
+			<section class="social">
+					<a href="#" class="tw"></a>
+					<a href="#" class="inst"></a>  	
+					<a href="#" class="fb"></a>	
+					<a href="#" class="vk"></a>
+				</section>  
+				<section class="footer-navigation">
+					<a href="#" class="contact">Для поставщиков</a>
+					<a href="#" class="contact">О производстве</a>
+					<a href="#" class="contact">Наши документы</a>
+					<a href="#" class="contact">Экологические стандарты</a>
+				</section>	
+				<section class="made">  
+					<a href="#"><img src="http://placehold.it/80x50" class="logo-html" alt=""></a> 			
+					<p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017</p> 
+				</section>
+		</footer>
+	</body>
+</html>
