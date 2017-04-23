@@ -1,0 +1,17 @@
+body {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 22px;
+  color: #0c0c0c;
+}
+
+h1 {
+  font-size: 35px;
+  line-height: 41px;
+  color: #ffffff;                  
+}
+h2 {
+  font-size: 25px;
+  line-height: 35px;
+  color: #ffffff;
+}
