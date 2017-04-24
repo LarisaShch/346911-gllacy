@@ -13,7 +13,7 @@
 				</a>
 				<nav class="navigation">
 					<ul class="menu">
-						<li class="menu-item active"> <!--здесь же правильно доп класс, что он активный?-->
+						<li class="menu-item active"> 
 							<a href="#" class="menu-item-link">Каталог</a>
 							<ul class="submenu">
 								<li class="submenu-item">
@@ -61,22 +61,22 @@
 					</div>
 					<div class="basket-order">
 						<a href="#">2 товара</a>
-						<div class="order">
-							<div class="order-1">
-								<button type="submit">Убрать</button> <!--я написала "убрать"" пока крестик ведь в css ставить?-->
+						<div> <!--я убрала класс у этого дива правильно? Он ведт не нужен? Ведь есть класс во вложенных дивах-->
+							<div class="order">
+								<button type="button">Убрать</button> 
 								<a href="#">Пломбир с апельсиновым джемом</a>
-								<span>1,5 кг. x <span class="color">200 руб.</span></span> <span class="total">300 руб.</span>									
+								<span>1,5 кг. x <span class="price-basket">200 руб.</span></span> <span class="total">300 руб.</span>									
 							</div>
-							<div class="order-2">
-								<button type="submit">Убрать</button>
+							<div class="order">
+								<button type="button">Убрать</button>
 								<a href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
-								<span>1,5 кг. x <span class="color">300 руб.</span></span> <span class="total">450 руб.</span>
+								<span>1,5 кг. x <span class="price-basket">300 руб.</span></span> <span class="total">450 руб.</span>
 							</div>
 						</div>
 						<hr>
 						<div class="result">
 							<span class="summary">Итого: 750 руб.</span>
-							<a href="#">Оформить заказ</a> <!--это ведь ссылка правильно?-->
+							<a href="#">Оформить заказ</a> 
 						</div>
 					</div>
 					<div class="time">
@@ -85,7 +85,7 @@
 				</div>
 			</div>		
 		</header>
-		<main class="index-page"> <!--Вопрос: класс мейну давать одинаковый на каждой странице? Или разный?-->
+		<main class="index-page"> 
 			<ul class="bread-crumbs">
 				<li>
 					<a href="#">Главная</a>
@@ -99,7 +99,7 @@
 			</ul>
 			<h1>Сливочное мороженое</h1>
 			<div class="forms">
-				<form action="#" method="post"> <!--рамку у фильтров в css делать?-->
+				<form action="#" method="post"> 
 					<div class="sort">
 						<p>Сортировка:</p>
 						<select class="sort-items">
@@ -115,27 +115,27 @@
 					</div>	
 					<div class="fat">
 						<p>Жирность:</p>
-						<input type="radio" name="fat" value="0%">
-						<label>0%</label>
-						<input type="radio" name="10%" class="fat-active">
-						<label>до 10%</label>
-						<input type="radio" name="30%">
-						<label>до 30%</label>
-						<input type="radio" name="more 30%">
-						<label>выше 30%</label>
+						<input type="radio" name="fat" value="0%" id="zero"> <!--Вопрос: инпуты всегда привязывать к лейблам???--> 
+						<label for="zero">0%</label>
+						<input type="radio" name="10%" class="fat-active" id="ten">
+						<label for="ten">до 10%</label>
+						<input type="radio" name="30%" id="less-thirty">
+						<label for="less-thirty">до 30%</label>
+						<input type="radio" name="more 30%" id="more-thirty">
+						<label for="more-thirty">выше 30%</label>
 					</div>
 					<div class="fills">
 						<p>Наполнители:</p>
-						<input type="checkbox" name="chocolate">
-						<label>шоколадные</label>
-						<input type="checkbox" name="sugar">
-						<label>сахарные присыпки</label>
-						<input type="checkbox" name="fruits">
-						<label>фрукты</label>
-						<input type="checkbox" name="syrups">
-						<label>сиропы</label>
-						<input type="checkbox" name="jam">
-						<label>джемы</label>
+						<input type="checkbox" name="chocolate" id="fill-1">
+						<label for="fill-1">шоколадные</label>
+						<input type="checkbox" name="sugar" id="fill-2">
+						<label for="fill-2">сахарные присыпки</label>
+						<input type="checkbox" name="fruits" id="fill-3">
+						<label for="fill-3">фрукты</label>
+						<input type="checkbox" name="syrups" id="fill-4">
+						<label for="fill-4">сиропы</label>
+						<input type="checkbox" name="jam" id="fill-5">
+						<label for="fill-5">джемы</label>
 					</div>
 					<button type="submit">Применить</button>
 				</form>
@@ -145,80 +145,82 @@
 					<img src="http://placehold.it/150x100" alt="">
 					<p>310 <span class="rubles">Р</span>/кг</p>
 					<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-					<button type="submit">Быстрый просмотр</button>
+					<a href="" class="offer-look">Быстрый просмотр</a> <!-- я поставила ссылкам такой же класс как и на главной странице,потому что эти кнопки одинаковые.Правильно?-->
 				</article>
 				<article class="items">
 					<img src="http://placehold.it/150x100" alt="">
 					<p>380 <span class="rubles">Р</span>/кг</p>
 					<a href="#">Сливочно-кофейное с кусочками шоколада</a>
-					<button type="submit">Быстрый просмотр</button>
+					<a href="" class="offer-look">Быстрый просмотр</a>
 				</article>
 				<article class="items">
 					<img src="http://placehold.it/150x100" alt="">
 					<p>355<span class="rubles">Р</span>/кг</p>
 					<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-					<button type="submit">Быстрый просмотр</button>
+					<a href="" class="offer-look">Быстрый просмотр</a>
 				</article>
 				<article class="items">
 					<img src="http://placehold.it/150x100" alt="">
 					<p>415<span class="rubles">Р</span>/кг</p>
 					<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
-					<button type="submit">Быстрый просмотр</button>
+					<a href="" class="offer-look">Быстрый просмотр</a>
 				</article>
 				<article class="items">
 					<img src="http://placehold.it/150x100" alt="">
 					<p>325<span class="rubles">Р</span>/кг</p>
 					<a href="#">Сливочное с брусничным джемом</a>
-					<button type="submit">Быстрый просмотр</button>					
+					<a href="" class="offer-look">Быстрый просмотр</a>					
 				</article>
 				<article class="items">
 					<img src="http://placehold.it/150x100" alt="">
 					<p>410<span class="rubles">Р</span>/кг</p>
 					<a href="#">Сливочно-черничное с цельными ягодами черники</a>
-					<button type="submit">Быстрый просмотр</button>
+					<a href="" class="offer-look">Быстрый просмотр</a>
 				</article>
 				<article class="items">
 					<img src="http://placehold.it/150x100" alt="">
 					<p>375<span class="rubles">Р</span>/кг</p>
 					<a href="#">Сливочно-лимонное с карамельной присыпкой</a>
-					<button type="submit">Быстрый просмотр</button>
+					<a href="" class="offer-look">Быстрый просмотр</a>
 				</article>
 				<article class="items">
 					<img src="http://placehold.it/150x100" alt="">
 					<p>320<span class="rubles">Р</span>/кг</p>
 					<a href="#">Сливочное с шоколадной стружкой</a>
-					<button type="submit">Быстрый просмотр</button>
+					<a href="" class="offer-look">Быстрый просмотр</a>
 				</article>
 				<article class="items">
 					<img src="http://placehold.it/150x100" alt="">
 					<p>440<span class="rubles">Р</span>/кг</p>
 					<a href="#">Сливочно-ванильное с кусочками шоколада</a>
-					<button type="submit">Быстрый просмотр</button>
+					<a href="" class="offer-look">Быстрый просмотр</a>
 				</article>
 				<article class="items">
 					<img src="http://placehold.it/150x100" alt="">
 					<p>435<span class="rubles">Р</span>/кг</p>
 					<a href="#">Сливочноe с ментоловым сиропом</a>
-					<button type="submit">Быстрый просмотр</button>
+					<a href="" class="offer-look">Быстрый просмотр</a>
 				</article>
 				<article class="items">
 					<img src="http://placehold.it/150x100" alt="">
 					<p>355<span class="rubles">Р</span>/кг</p>
 					<a href="#">Сливочное с кусочками черного шоколада</a>
-					<button type="submit">Быстрый просмотр</button>					
+					<a href="" class="offer-look">Быстрый просмотр</a>					
 				</article>
 				<article class="items">
 					<img src="http://placehold.it/150x100" alt="">
 					<p>420<span class="rubles">Р</span>/кг</p>
 					<a href="#">Сливочное с мятным сиропом</a>
-					<button type="submit">Быстрый просмотр</button>
+					<a href="" class="offer-look">Быстрый просмотр</a>
 				</article>
 			</div>
-			<ul>
+			<ul class="pagination">
 				<li>
-					<a href="#">Назад</a><!--здесь я поставила "назад" и "вперед" потому что на знак больше-меньше валидатор реагирует-->
+					<a href="#">&lt;</a>
 				</li>
-				<li class="active-2">1</li> <!--здесь нужна ссылка или нет? И еще если у меня уже есть класс актив я же делаю актив-2 правда????-->
+				<li class="active">
+					<a> 1</a>
+				</li> 
 				<li>
 					<a href="#">2</a>
 				</li>
@@ -232,7 +234,7 @@
 					<a href="#">5</a>
 				</li>
 				<li>
-					<a href="#">Вперед</a>
+					<a href="#">&gt;</a>
 				</li>
 			</ul>
 		</main>
