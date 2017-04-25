@@ -15,3 +15,183 @@ h2 {
   line-height: 35px;
   color: #ffffff;
 }
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+.top-case {
+  padding: 0 10px;
+  margin: 17px;
+  
+}
+.logo {
+  min-height: 112px;
+  float: left;
+}
+.navigation {
+  width: 678px;
+  float: left;    /*Как сделать что бы они стали в строку, я не понимаю. Делаю им свойство дисплей-инлайн-блок. Все равно не встают =( */
+}
+.time {
+  width: 166px;
+  float: right;
+  vertical-align: bottom;
+}
+.user {
+  width: 267px;
+  float: right;
+}
+.index-page {
+  clear: both;
+  margin-right: auto;
+  margin-left: auto;
+}
+.slider {
+  width: 670px;
+  margin-right: auto; /* не понимаю почему он не выровнял по центру??? Что я сделала не так?*/
+  margin-left: auto;
+  margin-bottom: 27px; /* я пока что сделала отступ от кнопки-ссылки, потому что у меня ОГРОМНЫЙ вопрос: как сделать так чтобы эта мороженка залезала на другие элементы;*/
+
+}
+.offers {
+  padding: 0 10px;
+  margin: 17px;
+  margin-bottom: 37px;
+
+}
+.raspberry {
+  width: 560px;
+  float: left;
+  height: 229px;
+  margin-left: 27px;
+  margin-right: 13px;
+}
+.choco {
+  height: 229px;
+  width: 560px;
+  float: right;
+
+}
+.product {
+  clear: both;
+  margin-bottom: 35px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.product-card {
+  width: 267px;
+  height: 330px;
+  float: left;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+.about {
+  clear: both;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 38px;
+  padding-left: 25px;
+
+}
+.new {
+  width: 560px;
+  height: 220px;
+  float: left;
+  margin-left: 27px;
+  margin-right: 13px;
+  margin-bottom: 40px;
+}
+.post {
+  margin-left: 13px;
+  margin-right: 27px;
+  width: 560px;
+  height: 220px;
+  float: right;
+  margin-bottom: 40px;
+}
+.location {
+  clear: both;
+  height: 430px;  
+}
+.data {
+  width: 302px;
+  height: 305px;
+  float: right;
+  margin-right: 27px;  
+}
+.footer {
+  margin-top: 20px;
+  width: 1146px;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+  margin-bottom: 25px;
+}
+.social {
+  width: 200px;
+  float: left;
+  margin-right: 102px;
+}
+.footer-navigation {
+  width: 345px;
+  float: left;
+  margin-left: 101px;
+  margin-right: 109px;
+}
+.made {
+  float: right;
+  width: 195px;
+  margin-left: 90px;
+}
+.modal {
+  clear: both;
+  height: 442px;
+  width: 477px;  
+}
+.forms {
+  width: 868px;
+  height: 140px;
+  margin-bottom: 39px;  
+  margin-right: 311px;
+  margin-left: 27px;
+
+}
+.sort {
+  width: 198px;
+  float: left;
+}
+.price-filter {
+  width: 224px;
+  float: left;
+}
+.fat {
+  width: 418px;
+  float: right;
+}
+.fills {
+  width: 705px;
+  float: left;
+}
+.fills-button {
+  width: 150px;
+  float: left; /*почему кнопка выбивается???*/  
+}
+.catalog {
+  clear: both;  
+  margin-bottom: 90px;
+}
+.pagination {
+  float: right;
+  clear: both;
+  margin-bottom: 25px;
+}
+.submenu,
+.search-form,
+.login-enter,
+.modal,
+.product-list,
+.sort-items {  /*я убрала эти ховеры, но как сделать так чтобы в состировке "по популярности" была видна???*/
+  display: none;
+}
