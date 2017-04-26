@@ -32,7 +32,11 @@ h2 {
 }
 .navigation {
   width: 678px;
-  float: left;    /*Как сделать что бы они стали в строку, я не понимаю. Делаю им свойство дисплей-инлайн-блок. Все равно не встают =( */
+  float: left; 
+   
+}
+li {
+  display: inline-block;  
 }
 .time {
   width: 166px;
@@ -84,8 +88,8 @@ h2 {
   width: 267px;
   height: 330px;
   float: left;
-  padding-left: 13px;
-  padding-right: 13px;
+  padding-left: 15px;
+  padding-right: 15px; /*как зафиксировать что бы их было 4 в ряду???*/
 }
 .about {
   clear: both;
@@ -194,4 +198,8 @@ h2 {
 .product-list,
 .sort-items {  /*я убрала эти ховеры, но как сделать так чтобы в состировке "по популярности" была видна???*/
   display: none;
+}
+.submenu-item-link {
+  margin-left: 30px;
+  margin-right: 30px; /* я ведь сделала маргины горизонтальные. Почему не появились отступы между этими элементами??? Почему они появляются только тогда когла я делаю марджины для тега ли*/
 }
