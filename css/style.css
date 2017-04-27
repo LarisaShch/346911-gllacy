@@ -3,6 +3,9 @@ body {
   font-size: 12px;
   line-height: 22px;
   color: #0c0c0c;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 h1 {
@@ -14,6 +17,7 @@ h2 {
   font-size: 25px;
   line-height: 35px;
   color: #ffffff;
+  width: 300px;
 }
 .clearfix::after {
   content: "";
@@ -22,18 +26,18 @@ h2 {
   clear: both;
 }
 .top-case {
-  padding: 0 10px;
-  margin: 17px;
-  
-}
+  padding: 0 27px;
+  background-color: lightgreen;
+   }
 .logo {
   min-height: 112px;
   float: left;
+  background-color: black;
 }
 .navigation {
   width: 678px;
   float: left; 
-   
+  background-color: pink;
 }
 li {
   display: inline-block;  
@@ -42,112 +46,141 @@ li {
   width: 166px;
   float: right;
   vertical-align: bottom;
+  text-align: right;
+  background-color: red;
 }
 .user {
-  width: 267px;
+  width: 280px;
   float: right;
+  background-color: yellow;
+ }
+
+.user div  {
+  display: inline-block;
+  margin: 0 30px;
 }
-.index-page {
-  clear: both;
-  margin-right: auto;
-  margin-left: auto;
+.index-page {  
+  background-color: lightblue;
 }
 .slider {
-  width: 670px;
-  margin-right: auto; /* не понимаю почему он не выровнял по центру??? Что я сделала не так?*/
-  margin-left: auto;
-  margin-bottom: 27px; /* я пока что сделала отступ от кнопки-ссылки, потому что у меня ОГРОМНЫЙ вопрос: как сделать так чтобы эта мороженка залезала на другие элементы;*/
+  width: 1146px;
+  height: 495px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+  padding: 0 27px;
+  text-align: center;
+  vertical-align: bottom;
+  background-image: url("../img/slider-1.png"); /*ааааааа! как это сделать???? Почему еще и надпись наверх убралась?????*/
 
 }
-.offers {
-  padding: 0 10px;
-  margin: 17px;
-  margin-bottom: 37px;
 
-}
 .raspberry {
-  width: 560px;
+  width: 520px;
   float: left;
+  padding: 0 18px;
   height: 229px;
+  margin-bottom: 45px;
+  background-color: #96000f;
   margin-left: 27px;
   margin-right: 13px;
 }
 .choco {
   height: 229px;
-  width: 560px;
-  float: right;
-
-}
-.product {
-  clear: both;
-  margin-bottom: 35px;
-  margin-right: auto;
-  margin-left: auto;
+  width: 520px;
+  padding: 0 18px;
+  float: right;   
+  margin-bottom: 45px;
+  margin-right: 27px;
+  margin-left: 13px;
+  background-color: #6e4029;
 }
 .product-card {
   width: 267px;
   height: 330px;
   float: left;
   padding-left: 15px;
-  padding-right: 15px; /*как зафиксировать что бы их было 4 в ряду???*/
+  padding-right: 15px; 
+  vertical-align:bottom; /* почему они не выровнялись по низу???*/
+  background-color: pink;
+  margin-bottom: 35px;
 }
-.about {
-  clear: both;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 38px;
-  padding-left: 25px;
-
+section.about {
+  width: 1100px;
+  margin-bottom: 40px; /*почему не отодвигается?*/
+  margin:0 27px; 
+  padding: 0 24px;
+  background-color: orange;
 }
 .new {
-  width: 560px;
+  width: 512px;
   height: 220px;
   float: left;
   margin-left: 27px;
   margin-right: 13px;
   margin-bottom: 40px;
+  background-color: #f9d7df;
+  padding: 0 24px;
 }
 .post {
   margin-left: 13px;
   margin-right: 27px;
-  width: 560px;
+  width: 512px;
   height: 220px;
   float: right;
   margin-bottom: 40px;
+  padding: 0 24px;
+  background-color: #55f57a;
 }
 .location {
-  clear: both;
-  height: 430px;  
+  background-image: url("../img/map.jpg");
+  height: 430px; 
+  clear: both; /* Здесь почему-то заглушка не помагает( я ее куда-то не туда поставила?*/
 }
 .data {
-  width: 302px;
+  width: 254px;
   height: 305px;
+  padding: 0 24px;
   float: right;
   margin-right: 27px;  
+  background-color: white;
+  border-radius: 5%;
 }
 .footer {
   margin-top: 20px;
-  width: 1146px;
+  width: 1200px;
+  min-height: 105px;
   margin-left: auto;
   margin-right: auto;
-  clear: both;
-  margin-bottom: 25px;
+  vertical-align: middle;
+  background-color: #ebc0a2;
 }
 .social {
   width: 200px;
   float: left;
-  margin-right: 102px;
+  margin-top: 35px;
+  padding-left:12px; 
+  background-color: #f2938e;
+  margin-right: 105px;
+}
+.tw,
+.inst,
+.vk,
+.fb {
+  padding-right: 13px;
+  padding-left: 13px;
 }
 .footer-navigation {
-  width: 345px;
+  width: 328px;
   float: left;
-  margin-left: 101px;
-  margin-right: 109px;
+  background-color: #8ff2a6; /* А как сделать чтобы слова именно так встали???*/
+  margin-left: 105px;
+  vertical-align: middle;/*почему не центролизовалось по вертикали? Я ведь и футеру сделала и именно этому класу и ничего?*/
 }
 .made {
   float: right;
   width: 195px;
   margin-left: 90px;
+  background-color: #7934be;
 }
 .modal {
   clear: both;
@@ -160,27 +193,33 @@ li {
   margin-bottom: 39px;  
   margin-right: 311px;
   margin-left: 27px;
+  background-color: lightgreen;
 
 }
 .sort {
   width: 198px;
   float: left;
+  background-color: #ed8297;
 }
 .price-filter {
   width: 224px;
   float: left;
+  background-color: #76ced5;
 }
 .fat {
   width: 418px;
   float: right;
+  background-color: #9fb1cf;
 }
 .fills {
-  width: 705px;
+  width: 685px;
   float: left;
+  background-color: #cd3766;
 }
 .fills-button {
   width: 150px;
-  float: left; /*почему кнопка выбивается???*/  
+  float: left; 
+  vertical-align: bottom; /*почему эта кнопка не прикрепилать к низу? если я поставила свойство?*/
 }
 .catalog {
   clear: both;  
@@ -195,11 +234,19 @@ li {
 .search-form,
 .login-enter,
 .modal,
-.product-list,
-.sort-items {  /*я убрала эти ховеры, но как сделать так чтобы в состировке "по популярности" была видна???*/
+.product-list {  
   display: none;
 }
-.submenu-item-link {
-  margin-left: 30px;
-  margin-right: 30px; /* я ведь сделала маргины горизонтальные. Почему не появились отступы между этими элементами??? Почему они появляются только тогда когла я делаю марджины для тега ли*/
+.menu-item-link {
+  margin-left: 25px;
+  margin-right: 25px; 
+}
+.basket-order {
+  width: 540px;
+  height: 243px;
+  background-color: white; /*как эту выподающую корзину сделать, чтобы она не выпадала?*/
+}
+.bread-crumbs-items {
+  margin-left: 18px;
+  margin-right: 18px;
 }

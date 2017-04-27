@@ -34,16 +34,16 @@
 							</ul>
 						</li>
 						<li>
-							<a href="#">Доставка и оплата</a>
+							<a href="#" class="menu-item-link">Доставка и оплата</a>
 						</li>
 						<li>
-							<a href="#">О Компании</a>
+							<a href="#" class="menu-item-link">О Компании</a>
 						</li>
 					</ul>
 				</nav>			
 				<div class="user">
 					<div class="search-block">
-						<a href="#" class="search-block-trigger"></a>
+						<a href="#" class="search-block-trigger">Лупа</a>
 						<form class="search-form" action="#" method="post">
 							<input type="search" placeholder="Что ищем?">
 							<button type="submit" class="submit-btn hidden"></button> 
@@ -85,59 +85,63 @@
 				</div>
 			</div>		
 		</header>
-		<main class="index-page"> 
+		<main class="index-page clearfix"> 
 			<ul class="bread-crumbs">
 				<li>
-					<a href="#">Главная</a>
+					<a href="#" class="bread-crumbs-items">Главная</a>
 				</li>
 				<li>
-					<a href="#">Каталог</a>
+					<a href="#" class="bread-crumbs-items">Каталог</a>
 				</li>
 				<li>
-					<a href="#">Сливочное</a>
+					<a href="#" class="bread-crumbs-items">Сливочное</a>
 				</li>
 			</ul>
 			<h1>Сливочное мороженое</h1>
 			<div class="forms">
 				<form action="#" method="post"> 
-					<div class="sort">
-						<p>Сортировка:</p>						
-						<select class="sort-items">
-							<option>по популярности</option> 
-							<option>сначала недорогие</option>
-							<option>сначала дорогие</option>
-							<option>по жирности</option>
-						</select>					
+					<div class="first-line">
+						<div class="sort">
+							<p>Сортировка:</p>						
+							<select class="sort-items">
+								<option>по популярности</option> 
+								<option>сначала недорогие</option>
+								<option>сначала дорогие</option>
+								<option>по жирности</option>
+							</select>					
+						</div>
+						<div class="price-filter"><!--как дклать такой ползунок с двумя джойстиками?-->
+							<p>Цена: 100 руб.- 500 руб.</p>
+							<input type="range" name="range" min="0" max="1000">
+						</div>	
+						<div class="fat">
+							<p>Жирность:</p>
+							<input type="radio" name="fat" value="0%" id="zero"> <!--Вопрос: инпуты всегда привязывать к лейблам???--> 
+							<label for="zero">0%</label>
+							<input type="radio" name="fat" class="fat-active" value="10%" id="ten">
+							<label for="ten">до 10%</label>
+							<input type="radio" name="fat" value="less-thirty" id="less-thirty">
+							<label for="less-thirty">до 30%</label>
+							<input type="radio" name="fat" value="more-thirty" id="more-thirty">
+							<label for="more-thirty">выше 30%</label>
+						</div>
 					</div>
-					<div class="price-filter"><!--как дклать такой ползунок с двумя джойстиками?-->
-						<p>Цена: 100 руб.- 500 руб.</p>
-						<input type="range" name="range" min="0" max="1000">
-					</div>	
-					<div class="fat">
-						<p>Жирность:</p>
-						<input type="radio" name="fat" value="0%" id="zero"> <!--Вопрос: инпуты всегда привязывать к лейблам???--> 
-						<label for="zero">0%</label>
-						<input type="radio" name="fat" class="fat-active" value="10%" id="ten">
-						<label for="ten">до 10%</label>
-						<input type="radio" name="fat" value="less-thirty" id="less-thirty">
-						<label for="less-thirty">до 30%</label>
-						<input type="radio" name="fat" value="more-thirty" id="more-thirty">
-						<label for="more-thirty">выше 30%</label>
+					<div class="second-line">
+						<div class="fills">
+							<p>Наполнители:</p>
+							<input type="checkbox" name="chocolate" id="fill-1">
+							<label for="fill-1">шоколадные</label>
+							<input type="checkbox" name="sugar" id="fill-2">
+							<label for="fill-2">сахарные присыпки</label>
+							<input type="checkbox" name="fruits" id="fill-3">
+							<label for="fill-3">фрукты</label>
+							<input type="checkbox" name="syrups" id="fill-4">
+							<label for="fill-4">сиропы</label>
+							<input type="checkbox" name="jam" id="fill-5">
+							<label for="fill-5">джемы</label>
+						</div>
+						<button type="submit" class="fills-button">Применить</button>
 					</div>
-					<div class="fills">
-						<p>Наполнители:</p>
-						<input type="checkbox" name="chocolate" id="fill-1">
-						<label for="fill-1">шоколадные</label>
-						<input type="checkbox" name="sugar" id="fill-2">
-						<label for="fill-2">сахарные присыпки</label>
-						<input type="checkbox" name="fruits" id="fill-3">
-						<label for="fill-3">фрукты</label>
-						<input type="checkbox" name="syrups" id="fill-4">
-						<label for="fill-4">сиропы</label>
-						<input type="checkbox" name="jam" id="fill-5">
-						<label for="fill-5">джемы</label>
-					</div>
-					<button type="submit" class="fills-button">Применить</button>
 				</form>
 			</div>
 			<div class="catalog">
@@ -238,7 +242,7 @@
 				</li>
 			</ul>
 		</main>
-		<footer class="footer">
+		<footer class="footer clearfix">
 			<section class="social">
 					<a href="#" class="tw">tw</a>
 					<a href="#" class="inst">inst</a>  	
