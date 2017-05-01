@@ -3,11 +3,12 @@ body {
   font-size: 12px;
   line-height: 22px;
   color: #0c0c0c;
+}
+.page-wrapper {
   width: 1200px;
   margin-right: auto;
-  margin-left: auto;
+  margin-left: auto; 
 }
-
 h1 {
   font-size: 35px;
   line-height: 41px;
@@ -35,31 +36,47 @@ h2 {
   background-color: black;
 }
 .navigation {
-  width: 678px;
+  min-width: 480px;
   float: left; 
+  padding-top: 15px;
   background-color: pink;
 }
-li {
-  display: inline-block;  
-}
+
 .time {
-  width: 166px;
+  width: 170px;
   float: right;
   vertical-align: bottom;
   text-align: right;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  position: absolute;
+  top: 60px;   /*Не понимаю, почему на главной странице телефон нормально встал, а на второй странице поплыло???*/
+  right: 185px;
   background-color: red;
 }
+.time-telephone {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+}
+
 .user {
-  width: 280px;
+  min-width: 280px;
   float: right;
   background-color: yellow;
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+  padding-top: 21px; 
  }
-
 .user div  {
   display: inline-block;
-  margin: 0 30px;
+  margin: 0 10px;  
 }
-.index-page {  
+.catalog-page {  
   background-color: lightblue;
 }
 .slider {
@@ -70,19 +87,31 @@ li {
   padding: 0 27px;
   text-align: center;
   vertical-align: bottom;
-  background-image: url("../img/slider-1.png"); /*ааааааа! как это сделать???? Почему еще и надпись наверх убралась?????*/
-
+  position: relative;   
 }
-
+.slider h1 {
+  vertical-align: bottom;
+  top: 255px;
+  position: absolute;
+  font-size: 60px;
+  line-height: 60px;
+  width: 675px;
+  left: 260px;
+}
+.index-page {
+  background: lightblue url("../img/slider-1.png")  no-repeat top;
+}
 .raspberry {
   width: 520px;
   float: left;
   padding: 0 18px;
   height: 229px;
   margin-bottom: 45px;
-  background-color: #96000f;
+  background: #96000f url("../img/raspberry_background.jpg") no-repeat;
+  border-radius: 10px;
   margin-left: 27px;
   margin-right: 13px;
+  
 }
 .choco {
   height: 229px;
@@ -92,24 +121,46 @@ li {
   margin-bottom: 45px;
   margin-right: 27px;
   margin-left: 13px;
-  background-color: #6e4029;
+  background: #6e4029 url("../img/choco_background.jpg")no-repeat;
+  border-radius: 10px;
+}
+.offer {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
 }
 .product-card {
   width: 267px;
   height: 330px;
   float: left;
-  padding-left: 15px;
-  padding-right: 15px; 
+  padding-left: 13px;
+  padding-right: 13px; 
   vertical-align:bottom; /* почему они не выровнялись по низу???*/
   background-color: pink;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 section.about {
   width: 1100px;
-  margin-bottom: 40px; /*почему не отодвигается?*/
   margin:0 27px; 
-  padding: 0 24px;
-  background-color: orange;
+  margin-bottom: 40px;
+  padding: 19px 24px;
+  background: url("../img/waffles-background.jpg"); 
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #353535;
+  height: 305px;
+ 
+
+}
+section p {
+  columns: 480px 2; /*КААААК? ПОЧЕМУУУ????*/
+}
+section h3 {
+  color: #353535;
+  font-size: 24px;
+  line-height: 30px;
 }
 .new {
   width: 512px;
@@ -118,8 +169,20 @@ section.about {
   margin-left: 27px;
   margin-right: 13px;
   margin-bottom: 40px;
-  background-color: #f9d7df;
+  background: url("../img/background-news.jpg") no-repeat;
   padding: 0 24px;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #353535;
+  line-height: 22px;
+}
+.news {
+  font-size: 24px;
+  line-height: 30px;
+  color: #353535;
+  font-weight: 700; 
+  display: inline-block;
+  max-width: 287px;  
 }
 .post {
   margin-left: 13px;
@@ -129,12 +192,14 @@ section.about {
   float: right;
   margin-bottom: 40px;
   padding: 0 24px;
-  background-color: #55f57a;
+  border-radius: 10px;
+  background-color: white;
+  border-image: url("../img/post.png") ;
 }
 .location {
   background-image: url("../img/map.jpg");
   height: 430px; 
-  clear: both; /* Здесь почему-то заглушка не помагает( я ее куда-то не туда поставила?*/
+  
 }
 .data {
   width: 254px;
@@ -146,8 +211,7 @@ section.about {
   border-radius: 5%;
 }
 .footer {
-  margin-top: 20px;
-  width: 1200px;
+  margin-top: 20px; 
   min-height: 105px;
   margin-left: auto;
   margin-right: auto;
@@ -155,25 +219,21 @@ section.about {
   background-color: #ebc0a2;
 }
 .social {
-  width: 200px;
+  min-width: 200px;
   float: left;
   margin-top: 35px;
   padding-left:12px; 
   background-color: #f2938e;
   margin-right: 105px;
+  display: inline-block;
 }
-.tw,
-.inst,
-.vk,
-.fb {
-  padding-right: 13px;
-  padding-left: 13px;
-}
+
 .footer-navigation {
   width: 328px;
   float: left;
   background-color: #8ff2a6; /* А как сделать чтобы слова именно так встали???*/
   margin-left: 105px;
+  display: inline-block;
   vertical-align: middle;/*почему не центролизовалось по вертикали? Я ведь и футеру сделала и именно этому класу и ничего?*/
 }
 .made {
@@ -181,20 +241,30 @@ section.about {
   width: 195px;
   margin-left: 90px;
   background-color: #7934be;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+.made a {
+  
+  color: #ffffff;
 }
 .modal {
   clear: both;
   height: 442px;
   width: 477px;  
 }
-.forms {
-  width: 868px;
+.forms {  
   height: 140px;
   margin-bottom: 39px;  
-  margin-right: 311px;
-  margin-left: 27px;
-  background-color: lightgreen;
+  margin: 0 auto;
+  padding: 0 27px;
+  background-color: green;
 
+}
+.form-wrapper {
+  width: 868px;
 }
 .sort {
   width: 198px;
@@ -223,13 +293,17 @@ section.about {
 }
 .catalog {
   clear: both;  
-  margin-bottom: 90px;
+  margin-bottom: 35px;
 }
 .pagination {
   float: right;
   clear: both;
   margin-bottom: 25px;
+} 
+.pagination li {
+  display: inline-block; 
 }
+
 .submenu,
 .search-form,
 .login-enter,
@@ -241,12 +315,191 @@ section.about {
   margin-left: 25px;
   margin-right: 25px; 
 }
-.basket-order {
+div.basket-tooltip {
+  position: absolute;
+  display: none;
+  background-color: black;
   width: 540px;
-  height: 243px;
-  background-color: white; /*как эту выподающую корзину сделать, чтобы она не выпадала?*/
+  min-height:241px;
+  right: -5px;
+  top: 35px;
+  
+}
+.basket-order:hover .basket-tooltip {
+  display: block;
+}
+.bread-crumbs li {
+  display: inline-block;
 }
 .bread-crumbs-items {
   margin-left: 18px;
   margin-right: 18px;
 }
+.top-main a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block; 
+
+}
+.navigation ul {
+  margin:0;
+  padding: 0;
+  font-size: 0;
+}
+.navigation li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 18px;
+}
+.navigation a {
+  display: block;
+  padding: 21px 15px;
+  text-align: left;
+}
+.navigation a:hover {
+  background-color: white;
+  color: black;
+  padding: 21px 15px;  
+  border-radius: 45px; 
+}
+
+.login {
+  vertical-align: middle; /*как сделать так чтобы текст в логине и корзине посередине был по вертикали*/
+  background-color: #a1b0a5;
+  border-radius: 40px;
+  padding-left: 45px;
+  position: relative;
+  height: 32px;
+  width: 90px;
+ }
+.login::before {
+  content: "";
+  width: 30px;
+  height: 25px;
+  position: absolute;
+  top: 7px;
+  left: 12px;
+  background:  url("../img/enter.png") no-repeat;
+}
+.search-block-trigger {
+  vertical-align: middle;  
+  background-color: #a1b0a5;
+  border-radius: 40px;
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+.search-block-trigger::before {
+  content: "";
+  width: 18px;
+  height: 20px;
+  position: absolute;
+  top: 8px;
+  left: 7px;
+  background: url("../img/loupe.png") no-repeat; 
+}
+.basket {
+  vertical-align: top;
+  background-color: #a1b0a5;
+  border-radius: 40px;
+  position: relative;
+  min-width: 115px;
+  height: 32px;
+  text-align: center;
+}
+.basket::before {
+  content: "";
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  background:  url("../img/basket.png") no-repeat;
+  left: 12px;
+  top: 5px;
+}
+.basket-order {
+  background-color: #f7f6f3;
+  border-radius: 40px;
+  position: relative;
+  min-width: 115px;
+  height: 32px;
+  color: #050505; /* Почему слова не стали черными?*/
+  text-align: center;
+  vertical-align: top;
+  padding-left: 43px;
+}
+.basket-order::before {
+  content: "";
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  background: url("../img/basket-full.png") no-repeat;
+  left: 19px;
+  top: 7px;
+
+}
+.footer-navigation {
+  margin-top: 35px;
+}
+.product-card img {
+  width: 265px;
+  height: 265px;
+  border-radius: 145px;
+}
+.tw,
+.inst,
+.vk,
+.fb {
+  margin-right: 13px;
+  margin-left: 13px;
+  background-color: #e8ebe9;
+  border: 4px solid #a9b6ad;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 40px;
+  vertical-align:middle; /* я не понима почему иконки не увеличились я ведь дала им ширину и высоту???*/
+}
+.tw {
+  background: url(../img/tw-icon.png) no-repeat;
+  
+}
+.inst {
+  background: url(../img/insta-icon.png) no-repeat;
+}
+.vk {
+  background: url(../img/vk-icon.png) no-repeat;
+}
+.fb {
+  background: url(../img/fb-icon.png) no-repeat;
+}
+.btn {
+  color: #ffffff;
+  background-color: #f16542;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  border-radius: 45px;
+  padding: 17px 20px;
+  position: absolute;
+
+}
+.slider-btn {
+  font-size: 32px;
+  line-height: 44px;
+  padding: 17px 40px;
+  position: absolute;
+  bottom: 0;
+  left: 460px;
+
+}
+.page-wrapper {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+/*ВОПРОСЫ:
+1) Я поняла как подключить шрифты через гугл и ссылку в html, но как их подключить локально???
+2) Почему я в фотошопе меряю элемент или отступ, задаю ему эти пиксели. А в окне браузера они на вид намного боьше чем на макете
+3)
