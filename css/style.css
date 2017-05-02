@@ -52,8 +52,8 @@ h2 {
   line-height: 16px;
   font-weight: 700;
   position: absolute;
-  top: 60px;   /*Не понимаю, почему на главной странице телефон нормально встал, а на второй странице поплыло???*/
-  right: 185px;
+  top: 60px;
+  right: 0px;
   background-color: red;
 }
 .time-telephone {
@@ -136,7 +136,7 @@ h2 {
   float: left;
   padding-left: 13px;
   padding-right: 13px; 
-  vertical-align:bottom; /* почему они не выровнялись по низу???*/
+  vertical-align:top; 
   background-color: pink;
   margin-bottom: 30px;
 }
@@ -151,12 +151,8 @@ section.about {
   line-height: 22px;
   color: #353535;
   height: 305px;
- 
+}
 
-}
-section p {
-  columns: 480px 2; /*КААААК? ПОЧЕМУУУ????*/
-}
 section h3 {
   color: #353535;
   font-size: 24px;
@@ -217,34 +213,40 @@ section h3 {
   margin-right: auto;
   vertical-align: middle;
   background-color: #ebc0a2;
+  position: relative;
+  margin-bottom: 27px;
 }
 .social {
   min-width: 200px;
-  float: left;
+  position: absolute;
   margin-top: 35px;
   padding-left:12px; 
   background-color: #f2938e;
-  margin-right: 105px;
+  margin-right: 210px;
   display: inline-block;
 }
 
 .footer-navigation {
-  width: 328px;
-  float: left;
-  background-color: #8ff2a6; /* А как сделать чтобы слова именно так встали???*/
-  margin-left: 105px;
+  width: 330px;
+  background-color: #8ff2a6; 
+  margin-left: 430px;
   display: inline-block;
-  vertical-align: middle;/*почему не центролизовалось по вертикали? Я ведь и футеру сделала и именно этому класу и ничего?*/
+  vertical-align: middle;
+  position: absolute;
+  bottom: 0px;
+  margin-top: 33px;
 }
 .made {
-  float: right;
   width: 195px;
-  margin-left: 90px;
   background-color: #7934be;
   font-size: 12px;
   line-height: 16px;
   color: #ffffff;
   margin-top: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  right: 0;
 }
 .made a {
   
@@ -297,7 +299,7 @@ section h3 {
 }
 .pagination {
   float: right;
-  clear: both;
+  
   margin-bottom: 25px;
 } 
 .pagination li {
@@ -364,14 +366,14 @@ div.basket-tooltip {
   border-radius: 45px; 
 }
 
-.login {
-  vertical-align: middle; /*как сделать так чтобы текст в логине и корзине посередине был по вертикали*/
+.login {  
   background-color: #a1b0a5;
   border-radius: 40px;
   padding-left: 45px;
   position: relative;
   height: 32px;
   width: 90px;
+  vertical-align: top;
  }
 .login::before {
   content: "";
@@ -417,18 +419,20 @@ div.basket-tooltip {
   left: 12px;
   top: 5px;
 }
-.basket-order {
+.basket-toggle {
   background-color: #f7f6f3;
   border-radius: 40px;
+  text-align: center;
   position: relative;
   min-width: 115px;
   height: 32px;
-  color: #050505; /* Почему слова не стали черными?*/
-  text-align: center;
   vertical-align: top;
   padding-left: 43px;
 }
-.basket-order::before {
+a.basket-toggle {
+  color: #050505;
+}
+.basket-toggle::before {
   content: "";
   width: 23px;
   height: 23px;
@@ -437,6 +441,9 @@ div.basket-tooltip {
   left: 19px;
   top: 7px;
 
+}
+.basket-order {
+  vertical-align: top;
 }
 .footer-navigation {
   margin-top: 35px;
@@ -452,12 +459,14 @@ div.basket-tooltip {
 .fb {
   margin-right: 13px;
   margin-left: 13px;
+  display: inline-block;
   background-color: #e8ebe9;
   border: 4px solid #a9b6ad;
-  min-width: 40px;
-  min-height: 40px;
+  min-width: 32px;
+  font-size: 0;
+  min-height: 32px;
   border-radius: 40px;
-  vertical-align:middle; /* я не понима почему иконки не увеличились я ведь дала им ширину и высоту???*/
+  vertical-align:middle; 
 }
 .tw {
   background: url(../img/tw-icon.png) no-repeat;
@@ -499,7 +508,16 @@ div.basket-tooltip {
   padding-left: 14px;
   padding-right: 14px;
 }
+
+.contact {
+  display: inline-block;
+  width: 169px;
+ 
+}
+
 /*ВОПРОСЫ:
-1) Я поняла как подключить шрифты через гугл и ссылку в html, но как их подключить локально???
-2) Почему я в фотошопе меряю элемент или отступ, задаю ему эти пиксели. А в окне браузера они на вид намного боьше чем на макете
-3)
+
+1) Как в секции about на главной странице сделать так чтобы текст в 2 столбца разделился, и еще добавить иконки перед абзацами?
+2)Как в блоке post сделать бордюр узором? У меня так и не получилось
+
+*/
