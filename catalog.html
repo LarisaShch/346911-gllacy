@@ -19,19 +19,19 @@
 								<a href="#" class="menu-item-link">Каталог</a>
 								<ul class="submenu">
 									<li class="submenu-item">
-										<a href="#" class="submenu-item-link submenu-item-main">Новинки</a> 
+										<a href="#" class="submenu-item-main">Новинки</a> 
 									</li>
 									<li>
-										<a href="#" class="submenu-item-link">Сливочное</a>										
+										<a href="#" class="submenu-item-main">Сливочное</a>										
 									</li>
 									<li>
-										<a href="#" class="submenu-item-link">Щербеты</a>
+										<a href="#" class="submenu-item-main">Щербеты</a>
 									</li>
 									<li>
-										<a href="#" class="submenu-item-link">Фруктовый лед</a>
+										<a href="#" class="submenu-item-main">Фруктовый лед</a>
 									</li>
 									<li>
-										<a href="#" class="submenu-item-link">Мелорин</a>
+										<a href="#" class="submenu-item-main">Мелорин</a>
 									</li>
 								</ul>
 							</li>
@@ -53,7 +53,7 @@
 						<div class="login">
 							<a href="#">Вход</a>
 							<form class="login-enter user-form" action="#" method="post">								
-								<input type="text" name="e-mail" placeholder="Электронная почта">
+								<input type="e-mail" name="e-mail" placeholder="Электронная почта">
 								<input type="password" name="password" placeholder="Пароль">
 								<button type="submit" class="login-enter-btn btn">Войти</button>
 								<div class="login-enter-href">
@@ -67,19 +67,27 @@
 							<div class="basket-tooltip">
 								<div class="product-list"> 
 									<div class="order">
-										<button type="button">Убрать</button> 
-										<a href="#">Пломбир с апельсиновым джемом</a>
-										<span>1,5 кг. x <span class="price-basket">200 руб.</span></span> <span class="total">300 руб.</span>				
+										<button type="button" class="delete">Убрать</button> 
+										<img src="img/orange_jam_small.png"  width="33" height="33">
+										<a href="#" class="product-order">Пломбир с апельсиновым джемом</a>
+										<div class="count">
+											1,5 кг. x <span class="price-basket">200 руб.</span>
+										</div>
+										<span class="total">300 руб.</span>				
 									</div>
 									<div class="order">
-										<button type="button">Убрать</button>
-										<a href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
-										<span>1,5 кг. x <span class="price-basket">300 руб.</span></span> <span class="total">450 руб.</span>
+										<button type="button" class="delete delete-second">Убрать</button>
+										<img src="img/strawberry_small.png"  width="33" height="33">
+										<a href="#" class="product-order">Клубничный пломбир с присыпкой из белого шоколада</a>
+										<div class="count">
+											1,5 кг. x <span class="price-basket">300 руб.</span>
+										</div>
+										<span class="total">450 руб.</span>
 									</div>
 								</div>
 								<div class="result">
 									<span class="summary">Итого: 750 руб.</span>
-									<a href="#">Оформить заказ</a> 
+									<a href="#" class="btn order-btn">Оформить заказ</a> 
 								</div>
 							</div>
 						</div>

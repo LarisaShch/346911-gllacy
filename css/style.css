@@ -66,7 +66,7 @@ h2 {
   position: absolute;
   top: 60px;
   right: 0px;
-  
+  z-index: 10;
 }
 .time-telephone {
   font-size: 22px;
@@ -257,7 +257,7 @@ section.about {
   font-size: 0;
   padding-left: 20px;
 }
-.about p{
+.about p {
   display: inline-block;
   width: 50%;
   vertical-align: top;
@@ -399,7 +399,7 @@ section h3 {
   margin-top: 35px;
   margin-right: 205px;
 }
-.social a{
+.social a {
   display: inline-block;
   width: 31px;
   height: 31px;
@@ -445,11 +445,7 @@ section h3 {
 .made a {  
   color: #ffffff;
 }
-.modal {
-  clear: both;
-  height: 442px;
-  width: 477px;  
-}
+
 .forms {  
   height: 140px;
   margin-bottom: 39px;  
@@ -497,11 +493,11 @@ section h3 {
   display: inline-block; 
 }
 
-.submenu,
+/*.submenu,
 .modal,
 .product-list {  
   display: none;
-}
+}*/
 
 div.basket-tooltip {
   position: absolute;
@@ -510,15 +506,83 @@ div.basket-tooltip {
   width: 540px;
   min-height:241px;
   right: -5px;
-  top: 35px;
+  top: 58px;
   color: black;  
+  z-index: 15;
+  border-radius: 5px;
+  font-size: 13px;
+  line-height: 16px;
 }
-div.basket-tooltip a {
+
+div a.product-order {
   color: black;
+  width: 220px;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 12px;
 }
+.result {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  padding-top:35px;
+  float: right;
+  padding-right: 15px;
+}
+.order-btn {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+.order {
+  padding-top: 20px;
+}
+.result {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  /*position: absolute;*/
+  right: 15px;
+  bottom: 82px;
+}
+.delete {
+  width: 11px;
+  height: 11px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  left: 18px;
+  top: 30px;
+  background: url(../img/delete.png) no-repeat;
+}
+.delete-second {
+  background: url(../img/delete.png) no-repeat;
+  top: 84px;
+}
+.price-basket {
+  color: #cccbca;
+}
+.order::after {
+  content: "";
+  width: 511px;
+  height: 1px;
+  background-color: #cacac7;
+  position: absolute;
+  top: 130px;
+  left: 15px;
+}
+
 .basket-order:hover .basket-tooltip {
   display: block;
 }
+.basket-tooltip img {
+ vertical-align: bottom;
+ padding: 0;
+ margin-left: 41px;
+
+}
+
 .bread-crumbs li {
   display: inline-block;
 }
@@ -556,7 +620,7 @@ div.basket-tooltip a {
 }
 
 
-.navigation a:hover {
+.menu-item-link:hover {
   background-color: white;
   color: black;
   border-radius: 45px; 
@@ -614,7 +678,7 @@ div.basket-tooltip a {
   margin: 0;
   padding: 0;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.3);
-  z-index: 100;
+  z-index: 65;
   border-radius: 5px;
   background-color: #f7f7f4;
   
@@ -706,7 +770,12 @@ a.basket-toggle {
 
 }
 .basket-order {
-  vertical-align: top;
+vertical-align: top;
+
+}
+.basket-tooltip {
+
+  
 }
 .footer-navigation {
   margin-top: 35px;
@@ -765,6 +834,7 @@ a.basket-toggle {
 }
 .offers-btn {
   right: 19px;
+  float: right;
 }
 .send {
   padding: 11px 16px 14px 17px;
@@ -837,7 +907,7 @@ a.basket-toggle {
 
 }
 .modal {
-  position: relative;
+  position: absolute;
   vertical-align: top;
   display: inline-block;
   margin: 0;
@@ -849,20 +919,24 @@ a.basket-toggle {
   background-color: #f7f7f4;
   border-radius: 10px;
   padding-left: 24px;
-
+  left: 530px;
+  top: 350px;
+  z-index: 80;
+  display: none;   /*скрыла пока что*/
 }
 .modal h5 {
   margin: 0;
   padding-top: 18px;
   padding-bottom: 22px;
 }
-input[type="text"],
+.modal input[type="text"],
 input[type="email"] {
   width: 267px;
   padding-top: 7px;
   padding-bottom: 6px;
   padding-left: 14px;
   min-height: 29px;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   outline: none;
@@ -877,6 +951,7 @@ textarea {
   color: #979797;
   border: 1px solid #d2d2d1;
   border-radius: 5px;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   outline: none;
@@ -893,21 +968,110 @@ textarea {
   padding-left: 13px;
   border: 2px solid rgba(56, 74, 93, 0.48); 
 }
+input:focus { 
+  border-color: #cbe0f6;
+}
+.modal input[type="text"]:focus,
+.modal input[type="email"]:focus,
+.modal textarea:focus {
+  border-color: #cbe0f6;
+  color: #000000;
+}
+
 .send-btn {
   float: right;
   margin-right: 25px;
+  margin-bottom: 25px;
+}
+.modal-close {
+  width: 17px;
+  height: 17px;
+  font-size: 0;
+  cursor: pointer;
+  border: 0;
+  position: absolute;
+  top: 12px;
+  right: 17px;
+}
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 2px;
+  background-color: #000000;
+  top: 9px;
+  right: 0px;
+}
+.modal-close::before {
+  transform: rotate(45deg);
+}
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 70;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.menu >li {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+.submenu {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 143px;
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.3);
+  display: none;           /*пока закрыла чтобы не мешало*/
 }
 
+.submenu a {
+  color: #323232;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 11px 20px 10px 20px;
+
+}
+.submenu li {
+  padding: 0;
+}
+.submenu a:hover {
+  background-color: #fbded8;
+  width: 103px;
+}
+.submenu a:focus {
+  background-color: #f6b5a5;
+  width: 103px;
+}
+.user-form {
+  display: none;         
+}
+.menu-item:hover .submenu {
+  display:block;
+} 
+.menu-item {
+  margin-bottom: 45px;
+}
 
 /*ВОПРОСЫ:
 
-1) Без малейшего понятия как сделать выпадающий список??????
+1) Почему в выподающем меню только 2 ссылки выделяются на главной странице, а на второй нормально все.И как сделать полоску у меня почему-то не получается через псевдоэлементы after и before????
 2) В меню user слова "вход" и "пусто" не могу посередине поставить почему то. Плюс при наведении как корзину,лупу и вход сделать черным???
-3)Как сделать так чтобы при нажатии выскакивали форма входа,поика и обратной связи?
+3)При наведении на полную корзину содержимое появляется но бысто исчезает. Как это исправить?
 4) Что я сделала не так в продукт-кард??? Почему картинка рубль такая большая и не изменяется при задании ей размеров???
 5) Я нормально сделала див post??? Я пыталась сделать бордер-имейдж, но у меня не получалось.
 6)Как сделать чтобы карта была на весь экран?
 7) В футере "экологические стандарты" в одну строчку не хотят становиться, почему?
 8) Как вместо стандартных чекбоксов и радио сделать картинки?
-9) В форме входа ссылки встроку встали, из=за чего???
+9)В полной корзине текст как нормально выровнять? У меня не получается, сьезжает то одно, то другое.
 */
