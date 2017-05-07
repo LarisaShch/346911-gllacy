@@ -143,7 +143,9 @@ h2 {
 .page-wrapper::after {
   background-image: url("../img/slider-3.png");
 }
-
+.offers {
+  padding: 0 27px;
+}
 .raspberry {
   width: 520px;
   float: left;
@@ -151,8 +153,7 @@ h2 {
   height: 229px;
   margin-bottom: 45px;
   background: #96000f url("../img/raspberry_background.jpg") no-repeat;
-  border-radius: 10px;
-  margin-left: 27px;
+  border-radius: 15px;
   margin-right: 13px;
   
 }
@@ -162,10 +163,9 @@ h2 {
   padding: 0 18px;
   float: right;   
   margin-bottom: 45px;
-  margin-right: 27px;
   margin-left: 13px;
   background: #6e4029 url("../img/choco_background.jpg")no-repeat;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 .offer {
   color: #ffffff;
@@ -174,11 +174,37 @@ h2 {
   font-weight: 700;
   position: relative;
 }
+.btn {
+  color: #ffffff;
+  background-color: #f16542;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 11px 22px 15px 21px;
+  display: inline-block;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  background: #f26843;
+  background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 100px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+}
+.offers-btn {
+  right: 19px;
+  float: right;
+}
 
+.blog {
+  padding-left: 27px;
+  padding-right: 27px;
+}
 .product-card {
   position: relative;
   vertical-align: top;
-  display: inline-block;
   float: left;
   width: 267px;
   margin-right: 26px;
@@ -186,20 +212,23 @@ h2 {
   min-height: 322px;
   text-align: center;  
 }
-
+.last-product {
+  margin-right: 0;
+}
 .product-item {
   position: absolute;
-  top: -5px;
-  left: -5px;
   border-radius: 4px;
-  width: 277px;
-  padding: 0;
+  width: 293px;
+  padding: 9px 9px 16px 9px;
   z-index: 40;
   background-color: inherit;
 }
+.offer-look {
+  display: none;
+}
 .product-card:hover .product-item {
-  background-color: rgba(97, 97, 96, 0.3); 
-  min-height: 353px;
+  background-color: rgba(247, 247, 244, 0.3); 
+  min-height: 405px;
   z-index: 50;
 } 
 .product-card:hover .offer-look {
@@ -207,7 +236,7 @@ h2 {
   z-index: 55;
   vertical-align: top;
 }
-.product-card .product-item::after {
+ .product-hit::after {
   content: "";
 
   position: absolute;
@@ -228,27 +257,36 @@ h2 {
   font-size: 30px;
   line-height: 45px;
   color: #ffffff;
+  margin-left: 13px;
+  margin-bottom: 0;
+}
+.ruble {  
+  margin-right: 5px;
+  padding-right: 35px;
+  font-size: 45px;
+  line-height: 45px;
+}
+.ruble::after {
+  content: "";
+  background: url(../img/ruble.png) no-repeat;
+  width: 27px;
+  height: 35px;
+  position: absolute;
+  top: 6px;
+  left: 81px;
 }
 
-.rubles span {
-  font-size: 45px;
-}
-.rubles img {
-  width: 31px;
-  height: 33px;
-  border-radius: 0;
-  margin-left: -8px;
-}
 .product-item-content a {
-  position: relative;
-  top: -102px;
+  position: relative;  
   z-index: 20;
   line-height: 22px;
   color: #ffffff;
 }
-
+.product-item-content {
+  min-height: 320px;
+}
 section.about {
-  width: 1146px;
+  width: 1126px;
   margin:0 27px; 
   margin-bottom: 40px;
   background: url("../img/waffles-background.jpg"); 
@@ -256,6 +294,7 @@ section.about {
   color: #353535;
   font-size: 0;
   padding-left: 20px;
+  padding-top: 27px;
 }
 .about p {
   display: inline-block;
@@ -291,7 +330,6 @@ section h3 {
   width: 512px;
   height: 220px;
   float: left;
-  margin-left: 27px;
   margin-right: 13px;
   margin-bottom: 40px;
   background: url("../img/background-news.jpg") no-repeat;
@@ -391,12 +429,12 @@ section h3 {
   margin-right: auto;
   vertical-align: middle;
   position: relative;
-  margin-bottom: 27px;
+  
 }
 .social {
 
   float: left;
-  margin-top: 35px;
+  padding-top: 15px;
   margin-right: 205px;
 }
 .social a {
@@ -435,7 +473,6 @@ section h3 {
   font-size: 12px;
   line-height: 16px;
   color: #ffffff;
-  margin-top: 20px;
   display: inline-block;
   vertical-align: middle;
   position: absolute;
@@ -447,9 +484,8 @@ section h3 {
 }
 
 .forms {  
-  height: 140px;
-  margin-bottom: 39px;  
-  margin: 0 auto;
+  height: 140px;   
+  margin: 0 auto; 
   padding: 0 27px;
 }
 .form-wrapper {
@@ -461,8 +497,9 @@ section h3 {
   
 }
 .price-filter {
-  width: 224px;
+  width: 220px;
   float: left;
+
  
 }
 .fat {
@@ -471,7 +508,7 @@ section h3 {
   
 }
 .fills {
-  width: 685px;
+  
   float: left;
   
 }
@@ -483,22 +520,65 @@ section h3 {
 .catalog {
   clear: both;  
   margin-bottom: 35px;
+  margin-top: 35px;
 }
 .pagination {
-  float: right;
-  
-  margin-bottom: 25px;
+  margin-top: 44px;
+  padding-bottom: 29px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: right; 
+ 
 } 
+.pagination ul {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0px;
+}
 .pagination li {
   display: inline-block; 
+  vertical-align: top; 
+  font-size: 16px;
+  font-weight: 500px;
+}
+.pagination a {
+  display: block;
+  text-align: center;
+  line-height: 28px;
+  width: 28px;
+  height: 28px;
+  color:  #ffffff;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.pagination li:last-child {
+  margin-left: 0;
 }
 
-/*.submenu,
-.modal,
-.product-list {  
-  display: none;
-}*/
+.pagination a:hover {
+  background-color:  rgba(255, 255, 255, 0.2);
+}
 
+.pagination a:active {
+  color:  #323232;
+  background-color: #ffffff;
+}
+
+.pagination .active a {
+   color:  #0a0a0a;
+   background-color: #ffffff;
+   border-radius: 50%;
+}
+
+.back {
+  color: #a1b0a5;
+  text-align: center;
+  text-align: center;
+  line-height: 28px;
+  width: 28px;
+  height: 28px;
+}
 div.basket-tooltip {
   position: absolute;
   display: none;
@@ -628,13 +708,16 @@ div a.product-order {
 }
 
 .login {  
-  background-color: #a1b0a5;
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 40px;
   padding-left: 45px;
   position: relative;
-  height: 32px;
-  width: 45px;
+  width: 33px;
   vertical-align: top;
+  padding-bottom: 7px;
+  padding-right: 17px;
+  padding-top: 8px;
+  padding-left: 42px;
  }
 .login::before {
   content: "";
@@ -645,13 +728,10 @@ div a.product-order {
   left: 12px;
   background:  url("../img/enter.png") no-repeat;
 }
-.login:hover {
-  color: black;
-  background-color: #f8f7f4;
-}
+
 .search-block-trigger {
   vertical-align: middle;  
-  background-color: #a1b0a5;
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 40px;
   position: relative;
   width: 32px;
@@ -695,6 +775,7 @@ div a.product-order {
   padding-left: 13px;
   
 }
+
 .login-enter {
   
   top: 49px;
@@ -732,13 +813,15 @@ div a.product-order {
 }
 .basket {
   vertical-align: top;
-  background-color: #a1b0a5;
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 40px;
   position: relative;
-  min-width: 79px;
-  height: 32px;
-  padding-left: 38px;
+  min-width: 44px;
+  padding-left: 40px;
   text-align: center;
+  padding-top: 8px;
+  padding-right: 32px;
+  padding-bottom: 7px;
 }
 .basket:hover {
   color: black;
@@ -750,8 +833,12 @@ div a.product-order {
   height: 23px;
   position: absolute;
   background:  url("../img/basket.png") no-repeat;
-  left: 12px;
+  left: 16px;
   top: 5px;
+}
+.login:hover {
+  color: black;
+  background-color: #f8f7f4;
 }
 .basket-toggle {
   background-color: #f7f6f3;
@@ -773,10 +860,7 @@ a.basket-toggle {
 vertical-align: top;
 
 }
-.basket-tooltip {
 
-  
-}
 .footer-navigation {
   margin-top: 35px;
 }
@@ -813,29 +897,7 @@ vertical-align: top;
 .fb {
   background: url(../img/fb-icon.png) no-repeat;
 }
-.btn {
-  color: #ffffff;
-  background-color: #f16542;
-  border: none;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  padding: 11px 22px 15px 21px;
-  display: inline-block;
-  text-decoration: none;
-  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-  background: #f26843;
-  background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
-  background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
-  background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
-  border-radius: 100px;
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-}
-.offers-btn {
-  right: 19px;
-  float: right;
-}
+
 .send {
   padding: 11px 16px 14px 17px;
   right: 20px;
@@ -1062,16 +1124,258 @@ input:focus {
 .menu-item {
   margin-bottom: 45px;
 }
+.bread-crumbs li,
+.bread-crumbs a {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  display: inline-block;
+  margin-right: 4px;
+  margin-left: 3px;
+  vertical-align: top;
+
+}
+.bread-crumbs ul {
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 2px;
+  padding: 0;
+}
+
+.bread-crumbs li {
+  display: inline-block;
+  vertical-align: top;
+}
+.bread-crumbs a:hover,
+.bread-crumbs a:active {
+  color: #ffbc9e;
+}
+
+.first-line {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  vertical-align: top;
+  color: #ffffff;
+  
+}
+.sort {
+  width: 193px;
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+  min-height: 36px;
+  overflow: hidden;  
+  margin-right: 15px;
+
+}
+.sort-items {
+  width: 192px;
+  margin: 0;
+  background-color: #a9bab0;
+  min-height: 32px;
+  border-radius: 45px;
+  color: #ffffff;
+  text-align: center;
+}
+.sort-items:hover option {
+  color: black;
+  background-color: #ffffff;
+  width: 192px;
+}
+.cost-filter {
+  position: relative;
+  width: 218px;
+  height: 19px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  padding-top: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+
+.cost-filter .scale {
+  position: absolute;
+  top: 16px;
+  left: 15px;
+  width: 188px;
+  height: 4px;
+  background-color: #ffffff;
+  opacity: 0.5;
+}
+
+.cost-filter .bar {
+  position: absolute;
+  top: 16px;
+  left: 44px;
+  width: 98px;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.cost-filter .range-toggle {
+  position: absolute;
+  top: 8px;
+  left: 34px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.cost-filter .range-toggle:last-child {
+  position: absolute;
+  top: 8px;
+  left: 132px;
+}
+
+
+.fills-button {
+  margin: 0;
+  margin-left: 11px;
+  padding: 5px 26px 5px 28px;
+  font-weight: 500;
+  background-color: #a9bab0;
+  border: 2px solid white;
+  min-height: 37px;
+  border-radius: 45px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.fills-button:hover {
+  color: #353535;
+  background-color: #ffffff;
+}
+.fills-button:active {
+  padding: 7px 28px 7px 30px;
+  box-shadow: inset 0px 2px 1px #696969;
+  color: #353535;
+  background-color: #eaeaea;
+  border: 0;  
+}
+.fat .fat-container {
+  min-height: 16px;
+  padding: 10px 16px 10px 16px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+}
+.fat input[type="radio"] + label {
+  margin-bottom: 10px;
+  margin-right: 14px;
+  padding-left: 31px;
+  position: relative; 
+  cursor: pointer;
+}
+.fat input[type="radio"] + label:last-child {
+  margin-right: 0;
+}
+
+.fat input[type="radio"] + label::before {
+  content: "";
+  display: block;
+  width: 19px;
+  height: 19px;
+  top: -1px;
+  left: 1px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  position: absolute;
+  border-radius: 50%;
+}
+
+.fat input[type="radio"] + label:hover::before {
+  width: 17px;
+  height: 17px;
+  border: 2px solid rgba(255, 255, 255, 1);
+} 
+
+.fat input,
+.fills input {
+  display: none;
+}
+
+.fat input[type="radio"]:checked + label::after {
+  content: "";
+  width: 13px;
+  height: 13px;
+  top: 3px;
+  left: 5px;
+  border-radius: 50%;
+  position: absolute;
+  border-radius: 50%;
+  background-color:  rgba(255, 255, 255, 1);
+}
+.second-line {
+  color: #ffffff;
+  font-size: 14px;
+
+}
+.fills-ice-cream .fills {
+    min-height: 16px;
+  padding: 10px 16px 10px 16px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.2);
+border-radius: 18px;
+}
+.fills-ice-cream input[type="checkbox"] + label {
+  margin-bottom: 10px;
+  margin-right: 18px;
+  padding-left: 31px;
+  position: relative; 
+  cursor: pointer;
+  position: relative;
+}
+
+.fills-ice-cream input[type="checkbox"] + label:last-child {
+  margin-right: 0;
+}
+
+.fills-ice-cream input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 18px;
+  height: 18px;
+  top: -1px;
+  left: -1px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 3px;  
+}
+
+.fills-ice-cream input[type="checkbox"]:checked + label::after {
+  content: "";
+  width: 14px;
+  height: 10px;
+  top: 4px;
+  left: 2px;
+  background-image: url(../img/checkbox-on.png);
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.fills-ice-cream input[type="checkbox"] + label:hover::before {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 1);
+} 
 
 /*ВОПРОСЫ:
 
 1) Почему в выподающем меню только 2 ссылки выделяются на главной странице, а на второй нормально все.И как сделать полоску у меня почему-то не получается через псевдоэлементы after и before????
-2) В меню user слова "вход" и "пусто" не могу посередине поставить почему то. Плюс при наведении как корзину,лупу и вход сделать черным???
+2) В меню user как при наведении как корзину,лупу и вход сделать черным???
 3)При наведении на полную корзину содержимое появляется но бысто исчезает. Как это исправить?
-4) Что я сделала не так в продукт-кард??? Почему картинка рубль такая большая и не изменяется при задании ей размеров???
+4) Что я сделала не так в продукт-кард??? Почему все равно вытянулась так???
 5) Я нормально сделала див post??? Я пыталась сделать бордер-имейдж, но у меня не получалось.
 6)Как сделать чтобы карта была на весь экран?
 7) В футере "экологические стандарты" в одну строчку не хотят становиться, почему?
-8) Как вместо стандартных чекбоксов и радио сделать картинки?
-9)В полной корзине текст как нормально выровнять? У меня не получается, сьезжает то одно, то другое.
+8)В полной корзине текст как нормально выровнять? У меня не получается, сьезжает то одно, то другое.
+9) Как выровнять фильтры? Почему по цене ТАК улетела? 
+10) Почему в наполнителях когда выделяешь не галочка ставиться,а фигня какая-то?
+11) Как сделать,что бы у выподающего окна при наведении тоже были скругленные края у тервого и последнего пункта?
+12) Фильтр сортировка в хроме нормально показывает, а в мозиле по-дурацки. Как это исправить?
 */

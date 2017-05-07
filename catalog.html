@@ -101,13 +101,13 @@
 			<main class="index-page clearfix"> 
 				<ul class="bread-crumbs">
 					<li>
-						<a href="#" class="bread-crumbs-items">Главная</a>
+						<a href="#" class="bread-crumbs-items">Главная </a> &raquo;
 					</li>
 					<li>
-						<a href="#" class="bread-crumbs-items">Каталог</a>
+						<a href="#" class="bread-crumbs-items">Каталог</a> &raquo;
 					</li>
 					<li>
-						<a href="#" class="bread-crumbs-items">Сливочное</a>
+						Сливочное
 					</li>
 				</ul>
 				<h1>Сливочное мороженое</h1>
@@ -124,35 +124,44 @@
 										<option>по жирности</option>
 									</select>					
 								</div>
-								<div class="price-filter"><!--как дклать такой ползунок с двумя джойстиками?-->
-									<p>Цена: 100 руб.- 500 руб.</p>
-									<input type="range" name="range" min="0" max="1000">
+								<div class="price-filter">
+									<div class="filter-title">Цена: 100 руб. – 500 руб.</div>
+          							<div class="cost-filter">
+            							<span class="scale"></span>
+            							<span class="bar"></span>
+            							<span class="range-toggle"></span>
+										<span class="range-toggle"></span>
+									</div>
 								</div>	
 								<div class="fat">
-									<p>Жирность:</p>
-									<input type="radio" name="fat" value="0%" id="zero"> <!--Вопрос: инпуты всегда привязывать к лейблам???--> 
-									<label for="zero">0%</label>
-									<input type="radio" name="fat" class="fat-active" value="10%" id="ten">
-									<label for="ten">до 10%</label>
-									<input type="radio" name="fat" value="less-thirty" id="less-thirty">
-									<label for="less-thirty">до 30%</label>
-									<input type="radio" name="fat" value="more-thirty" id="more-thirty">
-									<label for="more-thirty">выше 30%</label>
+									<p class="filter-title">Жирность:</p>
+									<div class="fat-container">
+										<input type="radio" name="fat" value="0%" id="zero"> 
+										<label for="zero">0%</label>
+										<input type="radio" name="fat" class="fat-active" value="10%" id="ten" checked>
+										<label for="ten">до 10%</label>
+										<input type="radio" name="fat" value="less-thirty" id="less-thirty">
+										<label for="less-thirty">до 30%</label>
+										<input type="radio" name="fat" value="more-thirty" id="more-thirty">
+										<label for="more-thirty">выше 30%</label>
+									</div>
 								</div>
 							</div>
 							<div class="second-line">
-								<div class="fills">
+								<div class="fills-ice-cream">
 									<p>Наполнители:</p>
-									<input type="checkbox" name="chocolate" id="fill-1">
-									<label for="fill-1">шоколадные</label>
-									<input type="checkbox" name="sugar" id="fill-2">
-									<label for="fill-2">сахарные присыпки</label>
-									<input type="checkbox" name="fruits" id="fill-3">
-									<label for="fill-3">фрукты</label>
-									<input type="checkbox" name="syrups" id="fill-4">
-									<label for="fill-4">сиропы</label>
-									<input type="checkbox" name="jam" id="fill-5">
-									<label for="fill-5">джемы</label>
+									<div class="fills">									
+										<input type="checkbox" name="chocolate" id="fill-1" checked>
+										<label for="fill-1">шоколадные</label>
+										<input type="checkbox" name="sugar" id="fill-2" checked>
+										<label for="fill-2">сахарные присыпки</label>
+										<input type="checkbox" name="fruits" id="fill-3">
+										<label for="fill-3">фрукты</label>
+										<input type="checkbox" name="syrups" id="fill-4">
+										<label for="fill-4">сиропы</label>
+										<input type="checkbox" name="jam" id="fill-5">
+										<label for="fill-5">джемы</label>
+									</div>
 								</div>
 								<button type="submit" class="fills-button">Применить</button>
 							</div>
@@ -160,12 +169,12 @@
 					</div>
 				</div>
 				<div class="catalog clearfix">
-					<div class="page-wrapper">
+					<div class="pages-wrapper">
 						<article class="product-card">
 							<div class="product-item">
 								<div class="product-item-content">
 									<img src="img/orange_jam.jpg" alt="">
-									<p class="rubles"><span>310 <img src="img/ruble.png" alt=""></span>/кг</p> 
+									<p class="rubles"><span class="ruble">310</span>/кг</p> 
 									<p><a href="#"> Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
 								</div>
 								<a href="" class="offer-look btn">Быстрый просмотр</a>
@@ -175,7 +184,7 @@
 							<div class="product-item">
 								<div class="product-item-content">
 									<img src="img/cofee_choco.jpg" alt="">
-									<p class="rubles"><span>380 <img src="img/ruble.png" alt=""></span>/кг</p> 
+									<p class="rubles"><span class="ruble">380</span>/кг</p> 
 									<p><a href="#">Сливочно-кофейное с кусочками шоколада</a> </p>
 								</div>
 								<a href="" class="offer-look btn">Быстрый просмотр</a>
@@ -185,7 +194,7 @@
 							<div class="product-item">
 								<div class="product-item-content">
 									<img src="img/strawberry.jpg" alt="">
-									<p class="rubles"><span>355 <img src="img/ruble.png" alt=""></span>/кг</p> 
+									<p class="rubles"><span class="ruble">355</span>/кг</p> 
 									<p><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
 								</div>
 								<a href="" class="offer-look btn">Быстрый просмотр</a>
@@ -195,7 +204,7 @@
 							<div class="product-item">
 								<div class="product-item-content">
 									<img src="img/with_caramel.jpg" alt="">
-									<p class="rubles"><span>415 <img src="img/ruble.png" alt=""></span>/кг</p> 
+									<p class="rubles"><span class="ruble">415</span>/кг</p> 
 									<p><a href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
 								</div>
 								<a href="" class="offer-look btn">Быстрый просмотр</a>
@@ -205,7 +214,7 @@
 							<div class="product-item">
 								<div class="product-item-content">
 									<img src="img/cranberries_jam.jpg" alt="">
-									<p class="rubles"><span>325 <img src="img/ruble.png" alt=""></span>/кг</p>
+									<p class="rubles"><span class="ruble">325</span>/кг</p>
 									<p><a href="#">Сливочное с брусничным джемом</a></p>
 								</div>
 								<a href="" class="offer-look btn">Быстрый просмотр</a>
@@ -215,7 +224,7 @@
 							<div class="product-item">
 								<div class="product-item-content">
 									<img src="img/blueberries.jpg" alt="">
-									<p class="rubles"><span>410<img src="img/ruble.png" alt=""></span>/кг</p>
+									<p class="rubles"><span class="ruble">410</span>/кг</p>
 									<p><a href="#">Сливочно-черничное с цельными ягодами черники</a></p>
 								</div>
 								<a href="" class="offer-look btn">Быстрый просмотр</a>
@@ -225,7 +234,7 @@
 							<div class="product-item">
 								<div class="product-item-content">
 									<img src="img/lemons.jpg" alt="">
-									<p class="rubles"><span>375 <img src="img/ruble.png" alt=""></span>/кг</p>
+									<p class="rubles"><span class="ruble">375</span>/кг</p>
 									<p><a href="#">Сливочно-лимонное с карамельной присыпкой</a></p>
 								</div>
 								<a href="" class="offer-look btn">Быстрый просмотр</a>
@@ -235,7 +244,7 @@
 							<div class="product-item">
 								<div class="product-item-content">
 									<img src="img/creamy_choco.jpg" alt="">
-									<p class="rubles"><span>320 <img src="img/ruble.png" alt=""></span>/кг</p>
+									<p class="rubles"><span class="ruble">320</span>/кг</p>
 									<p><a href="#">Сливочное с шоколадной стружкой</a></p>
 								</div>
 								<a href="" class="offer-look btn">Быстрый просмотр</a>
@@ -245,7 +254,7 @@
 							<div class="product-item">
 								<div class="product-item-content">
 									<img src="img/vanila.jpg" alt="">
-									<p class="rubles"><span>440 <img src="img/ruble.png" alt=""></span>/кг</p>
+									<p class="rubles"><span class="ruble">440</span>/кг</p>
 									<p><a href="#">Сливочно-ванильное с кусочками шоколада</a></p>
 								</div>
 								<a href="" class="offer-look btn">Быстрый просмотр</a>
@@ -255,7 +264,7 @@
 							<div class="product-item">
 								<div class="product-item-content">
 									<img src="img/mentol.jpg" alt="">
-									<p class="rubles"><span>435<img src="img/ruble.png" alt=""></span>/кг</p>
+									<p class="rubles"><span class="ruble">435</span>/кг</p>
 									<p><a href="#">Сливочноe с ментоловым сиропом</a></p>
 								</div>
 								<a href="" class="offer-look btn">Быстрый просмотр</a>
@@ -265,7 +274,7 @@
 							<div class="product-item">
 								<div class="product-item-content">
 									<img src="img/dark-choko.jpg" alt="">
-									<p class="rubles"><span>355 <img src="img/ruble.png" alt=""></span>/кг</p>
+									<p class="rubles"><span class="ruble">355</span>/кг</p>
 									<p><a href="#">Сливочное с кусочками черного шоколада</a></p>
 								</div>
 								<a href="" class="offer-look btn">Быстрый просмотр</a>
@@ -275,7 +284,7 @@
 							<div class="product-item">
 								<div class="product-item-content">
 									<img src="img/mint.jpg" alt="">
-									<p class="rubles"><span>420<img src="img/ruble.png" alt=""></span>/кг</p>
+									<p class="rubles"><span class="ruble">420</span>/кг</p>
 									<p><a href="#">Сливочное с мятным сиропом</a></p>
 								</div>
 								<a href="" class="offer-look btn">Быстрый просмотр</a>
@@ -284,8 +293,8 @@
 					</div>
 				</div>
 				<ul class="pagination">
-					<li>
-						<a href="#">&lt;</a>
+					<li class="back">
+						&lt;
 					</li>
 					<li class="active">
 						<a> 1</a>
