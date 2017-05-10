@@ -11,72 +11,72 @@
     	<input type="radio" id="btn-2" name="toggle">
     	<input type="radio" id="btn-3" name="toggle">
 		<div class="page-wrapper">
-			<div class="main">
-				<header class="top-main">
-					<div class="top-case clearfix">
-						<a href="#" class="logo">
-							<img src="img/logo.png" alt="logo">
-						</a>
-						<nav class="navigation">
-							<ul class="menu">
-								<li class="menu-item">
-									<a href="#" class="menu-item-link">Каталог</a>
-									<ul class="submenu">
-										<li class="submenu-item">
-											<a href="#" class="submenu-item-main">Новинки</a> 
-										</li>
-										<li>
-											<a href="#" class="submenu-item-main">Сливочное</a>										
-										</li>
-										<li>
-											<a href="#" class="submenu-item-main">Щербеты</a>
-										</li>
-										<li>
-											<a href="#" class="submenu-item-main">Фруктовый лед</a>
-										</li>
-										<li>
-											<a href="#" class="submenu-item-main">Мелорин</a>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<a href="#" class="menu-item-link">Доставка и оплата</a>
-								</li>
-								<li>
-									<a href="#" class="menu-item-link">О Компании</a>
-								</li>
-							</ul>
-						</nav>			
-						<div class="user">
-							<div class="search-block">
-								<a href="#" class="search-block-trigger"></a>
-								<form class="search-form user-form" action="#" method="post">
-									<input type="search" placeholder="Что ищем?">
-								</form>
-							</div> 
-							<div class="login">
-								<a href="#">Вход</a>
-								<form class="login-enter user-form" action="#" method="post">								
-									<input type="e-mail" name="e-mail" placeholder="Электронная почта">
-									<input type="password" name="password" placeholder="Пароль">
-									<button type="submit" class="login-enter-btn btn">Войти</button>
-									<div class="login-enter-href">
-										<a href="#">Забыли пароль?</a>
-										<a href="#">Новая регистрация</a>
-									</div>
-								</form> 
-							</div>
-							<div class="basket-order">
-								<a href="#" class="basket">Пусто</a>
-							</div>						
-							<div class="time">
-								<p>С 10 до 20, ежедневно</p>
-								<p class="time-telephone">8 812 450-25-25</p>
-							</div>
+			<header class="top-main">
+				<div class="top-case clearfix">
+					<a href="#" class="logo">
+						<img src="img/logo.png" alt="logo">
+					</a>
+					<nav class="navigation">
+						<ul class="menu">
+							<li class="menu-item">
+								<a href="#" class="menu-item-link">Каталог</a>
+								<ul class="submenu">
+									<li class="submenu-item">
+										<a href="#" class="submenu-item-main item-active">Новинки</a> 
+									</li>
+									<li>
+										<a href="#" class="submenu-item-main">Сливочное</a>										
+									</li>
+									<li>
+										<a href="#" class="submenu-item-main">Щербеты</a>
+									</li>
+									<li>
+										<a href="#" class="submenu-item-main">Фруктовый лед</a>
+									</li>
+									<li>
+										<a href="#" class="submenu-item-main">Мелорин</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="menu-item-link">Доставка и оплата</a>
+							</li>
+							<li>
+								<a href="#" class="menu-item-link">О Компании</a>
+							</li>
+						</ul>
+					</nav>			
+					<div class="user">
+						<div class="search-block">
+							<a href="#" class="search-block-trigger"></a>
+							<form class="search-form user-form" action="#" method="post">
+								<input type="search" placeholder="Что ищем?">
+							</form>
+						</div> 
+						<div class="login">
+							<a href="#">Вход</a>
+							<form class="login-enter user-form" action="#" method="post">								
+								<input type="e-mail" name="e-mail" placeholder="Электронная почта">
+								<input type="password" name="password" placeholder="Пароль">
+								<button type="submit" class="login-enter-btn btn">Войти</button>
+								<div class="login-enter-href">
+									<a href="#">Забыли пароль?</a>
+									<a href="#">Новая регистрация</a>
+								</div>
+							</form> 
 						</div>
+						<div class="basket-order">
+							<a href="#" class="basket">Пусто</a>
+						</div>	
+						<div class="time">
+							<p>С 10 до 20, ежедневно</p>
+							<p class="time-telephone">8 812 450-25-25</p>
+						</div>					
 					</div>
-				</header>
-				<main class="index-page">	
+				</div>
+			</header>
+			<div class="main main-index">
+				<main class="index-page">
 					<div class="slider">			
 						<div class="slide" id="slide1">
 							<h1>Крем-брюле и пломбир с малиновым джемом</h1> 
@@ -115,7 +115,7 @@
 									<div class="product-item-content">
 										<img src="img/orange_jam.jpg" alt="">
 										<p class="rubles"><span class="ruble">310</span>/кг</p> 
-										<p><a href="#"> Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
+										<p class="item"><a href="#"> Сливочное с апельсиновым <br> джемом и цитрусовой стружкой</a></p>
 									</div>
 									<a href="" class="offer-look btn">Быстрый просмотр</a>
 								</div>
@@ -125,7 +125,7 @@
 									<div class="product-item-content">
 										<img src="img/cofee_choco.jpg" alt="">
 										<p class="rubles"><span class="ruble">380</span>/кг</p> 
-										<p><a href="#">Сливочно-кофейное с кусочками шоколада</a> </p>
+										<p class="item"><a href="#">Сливочно-кофейное с кусочками <br> шоколада</a> </p>
 									</div>
 									<a href="" class="offer-look btn">Быстрый просмотр</a>
 								</div>
@@ -135,7 +135,7 @@
 									<div class="product-item-content">
 										<img src="img/strawberry.jpg" alt="">
 										<p class="rubles"><span class="ruble">355</span>/кг</p> 
-										<p><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
+										<p class="item"><a href="#">Сливочно-клубничное с <br> присыпкой из белого шоколада</a></p>
 									</div>
 									<a href="" class="offer-look btn">Быстрый просмотр</a>
 								</div>
@@ -145,7 +145,7 @@
 									<div class="product-item-content">
 										<img src="img/with_caramel.jpg" alt="">
 										<p class="rubles"><span class="ruble">415</span>/кг</p> 
-										<p><a href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
+										<p class="item"><a href="#">Сливочное крем-брюле с <br> карамельной подливкой</a></p>
 									</div>
 									<a href="" class="offer-look btn">Быстрый просмотр</a>
 								</div>
@@ -173,51 +173,51 @@
 							</div>
 						</div>
 					</section> 
-					<div class="location clearfix">
-						<div class="data">
-							<div class="address-block">
-								<p>Адрес главного офиса и офлайн магазина:</p>
-								<p class="address address-first">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-							</div>
-							<div class="time-block">
-								<p>Для заказов по телефону:</p>
-								<p class="address">8 812 450-25-25</p>
-								<p>(с 10 до 20 ежедневно)</p>
-							</div>
-							<a href="#" class="feedback btn">Форма обратной связи</a>
-						</div>
-					</div>
-				</main>
-				<footer class="footer clearfix">
-					<section class="social">
-						<a href="#" class="tw">tw</a>
-						<a href="#" class="inst">inst</a>  	
-						<a href="#" class="fb">fb</a>	
-						<a href="#" class="vk">vk</a>
-					</section>  
-					<section class="footer-navigation">
-						<a href="#" class="contact heart">Для поставщиков</a>
-						<a href="#" class="contact">О производстве</a>
-						<a href="#" class="contact">Наши документы</a>
-						<a href="#" class="contact">Экологические стандарты</a>
-					</section>	
-					<section class="made">  
-						<a href="#"><img src="img/html-icon.png" class="logo-html" alt=""></a> 			
-						<p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy; 2017</p> 
-					</section>
-				</footer>
-				<div class="modal">
-					<button class="modal-close" type="button" title="Закрыть">Закрыть</button>
-					<form action="#" method="post">
-						<h5>Мы обязательно вам ответим!</h5>
-						<input type="text" name="name" placeholder="Как вас зовут?">
-						<input type="email" name="e-mail" placeholder="Ваша почта для ответа?">
-						<textarea name="text" placeholder="Напишите что-нибудь..."></textarea>
-						<button type="submit" class="send-btn btn">Отправить</button>
-					</form>
 				</div>
-				<div class="modal-overlay"></div>
-			</div>  
+				<div class="location clearfix">
+					<div class="data">
+						<div class="address-block">
+							<p>Адрес главного офиса <br> и офлайн магазина:</p>
+							<p class="address address-first">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+						</div>
+						<div class="time-block">
+							<p>Для заказов по телефону:</p>
+							<p class="address">8 812 450-25-25</p>
+							<p>(с 10 до 20 ежедневно)</p>
+						</div>
+						<a href="#" class="feedback btn">Форма обратной связи</a>
+					</div>
+				</div>
+			</main>
+			<footer class="footer clearfix">
+				<section class="social">
+					<a href="#" class="tw">tw</a>
+					<a href="#" class="inst">inst</a>  	
+					<a href="#" class="fb">fb</a>	
+					<a href="#" class="vk">vk</a>
+				</section>  
+				<section class="footer-navigation">
+					<a href="#" class="contact heart"><b> Для поставщиков</b></a>
+					<a href="#" class="contact">Наши документы</a>
+					<a href="#" class="contact">О производстве</a>
+					<a href="#" class="contact">Экологические стандарты</a>
+				</section>	
+				<section class="made">  
+					<a href="#"><img src="img/html-icon.png" class="logo-html" alt=""></a> 			
+					<p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy; 2017</p> 
+				</section>
+			</footer>
+			<div class="modal">
+				<button class="modal-close" type="button" title="Закрыть">Закрыть</button>
+				<form action="#" method="post">
+					<h5>Мы обязательно вам ответим!</h5>
+					<input type="text" name="name" placeholder="Как вас зовут?">
+					<input type="email" name="e-mail" placeholder="Ваша почта для ответа?">
+					<textarea name="text" placeholder="Напишите что-нибудь..."></textarea>
+					<button type="submit" class="send-btn btn">Отправить</button>
+				</form>
+			</div>
+			<div class="modal-overlay"></div>
 		</div>		
 	</body>
 </html>

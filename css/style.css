@@ -21,16 +21,22 @@ body > input[type="radio"] {
   margin: 0 auto;
 
 }
+.top-main {
+    width: 1200px;
+  margin: 0 auto;
+}
 h1 {
   font-size: 35px;
   line-height: 41px;
   color: #ffffff;                  
 }
 h2 {
-  font-size: 25px;
-  line-height: 35px;
+  font-size: 35px;
+  line-height: 41px;
   color: #ffffff;
-  width: 300px;
+  margin-top: 17px;
+  margin-bottom: 0;
+  font-weight: 600px;
 }
 .clearfix::after {
   content: "";
@@ -40,20 +46,20 @@ h2 {
 }
 .top-case {
   padding: 0 27px;
- 
+ position: relative;
 }
 .logo {
-  min-height: 112px;
+  /*min-height: 112px;*/
   float: left;
   margin-top: 10px;
   
 }
-.navigation {
-  min-width: 480px;
-  float: left; 
-    
+.bread-crumbs-title {
+  float: left;
+  position: absolute;
+  top: 85px;
+  left: -20px;
 }
-
 .time {
   width: 170px;
   float: right;
@@ -64,8 +70,8 @@ h2 {
   line-height: 16px;
   font-weight: 700;
   position: absolute;
-  top: 60px;
-  right: 0px;
+  padding-top: 18px;
+  padding-left: 93px;
   z-index: 10;
 }
 .time-telephone {
@@ -74,21 +80,24 @@ h2 {
   line-height: 24px;
   margin: 0;
 }
+.time p {
+  margin: 0;
+  margin-bottom: 4px;
+}
 
 .user {
-  min-width: 280px;
+  min-width: 253px;
   float: right;
-  position: relative;
   font-size: 14px;
   line-height: 16px;
-  padding-top: 21px; 
+  padding-top: 23px; 
  }
 .user div  {
   display: inline-block;
-  margin: 0 10px;  
+ 
 }
 .slider {
-  margin-bottom: 36px;
+  margin-bottom: 54px;
   text-align: center;
   position: relative;   
   padding-top: 270px;
@@ -147,11 +156,11 @@ h2 {
   padding: 0 27px;
 }
 .raspberry {
-  width: 520px;
+  width: 524px;
   float: left;
   padding: 0 18px;
   height: 229px;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
   background: #96000f url("../img/raspberry_background.jpg") no-repeat;
   border-radius: 15px;
   margin-right: 13px;
@@ -159,10 +168,10 @@ h2 {
 }
 .choco {
   height: 229px;
-  width: 520px;
+  width: 524px;
   padding: 0 18px;
   float: right;   
-  margin-bottom: 45px;
+  margin-bottom: 30px;
   margin-left: 13px;
   background: #6e4029 url("../img/choco_background.jpg")no-repeat;
   border-radius: 15px;
@@ -182,7 +191,7 @@ h2 {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  padding: 11px 22px 15px 21px;
+  padding: 11px 22px;
   display: inline-block;
   text-decoration: none;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
@@ -194,10 +203,16 @@ h2 {
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 .offers-btn {
-  right: 19px;
-  float: right;
+  right: 22px;
+  position: absolute;
+  top: 160px;
 }
-
+.offers p {
+  margin-top: 15px;
+}
+.pages-wrapper {
+  padding: 0 27px;
+}
 .blog {
   padding-left: 27px;
   padding-right: 27px;
@@ -208,7 +223,7 @@ h2 {
   float: left;
   width: 267px;
   margin-right: 26px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   min-height: 322px;
   text-align: center;  
 }
@@ -218,7 +233,7 @@ h2 {
 .product-item {
   position: absolute;
   border-radius: 4px;
-  width: 293px;
+  width: 275px;
   padding: 9px 9px 16px 9px;
   z-index: 40;
   background-color: inherit;
@@ -233,15 +248,17 @@ h2 {
 } 
 .product-card:hover .offer-look {
   display: inline-block;
-  z-index: 55;
+  z-index: 95;
   vertical-align: top;
+  position: absolute;
+  top: 350px;
+  right: 45px;
 }
  .product-hit::after {
   content: "";
-
   position: absolute;
   left: 0;
-  top: 0;
+  top: 10px;
   height: 61px;
   width: 61px;  
   background-color: inherit;
@@ -250,8 +267,9 @@ h2 {
   border-radius: 50px;
 }
 .rubles {
-  position: relative;
-  top: -94px;
+  position: absolute;
+  top: 180px;
+  left: -13px;
   text-align: left;
   font-weight: 700;
   font-size: 30px;
@@ -261,7 +279,7 @@ h2 {
   margin-bottom: 0;
 }
 .ruble {  
-  margin-right: 5px;
+  margin-right: 0;
   padding-right: 35px;
   font-size: 45px;
   line-height: 45px;
@@ -275,69 +293,98 @@ h2 {
   top: 6px;
   left: 81px;
 }
-
+.item {
+  margin: 0;
+  margin-top: 10px;
+}
 .product-item-content a {
-  position: relative;  
-  z-index: 20;
+  /*position: relative;  
+  z-index: 20;*/
   line-height: 22px;
+  font-size: 16px;
   color: #ffffff;
 }
 .product-item-content {
   min-height: 320px;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+.menu-item-link,
+.item-active {
+  font-weight: 700;
 }
 section.about {
   width: 1126px;
   margin:0 27px; 
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   background: url("../img/waffles-background.jpg"); 
-  border-radius: 10px;  
+  border-radius: 15px;  
   color: #353535;
   font-size: 0;
   padding-left: 20px;
-  padding-top: 27px;
+  padding-top: 3px;
 }
 .about p {
   display: inline-block;
   width: 50%;
   vertical-align: top;
-  padding-left: 60px;
+  padding-left: 56px;
   font-size: 16px;
   line-height: 22px;
   padding-right: 13px;
-  margin: 0 0 20px 0;
   box-sizing: border-box;
   position: relative;
+  margin: 0;
 }
 .ice-cream-icon {
   background: url("../img/ice-cream-icon.png") no-repeat;
+  background-position-y: 7px;
+  padding-top: 19px;
+  padding-bottom: 12px;
 }
 .leaves-icon {
   background: url("../img/leaves-icon.png") no-repeat;
+  background-position-y: 0px;
+  padding-top: 11px;
+  padding-bottom: 29px;
 }
 .cow-icon {
   background: url("../img/Cow-icon.png") no-repeat;
+  background-position-y: 6px;
+  background-position-x: 4px;
+  padding-top: 19px;
+  padding-bottom: 12px;
 }
 .thermometer-icon {
   background: url("../img/Thermometer-icon.png") no-repeat;
+  background-position-y: 0px;
+  background-position-x: 2px;
+  padding-top: 14px;
+  padding-bottom: 29px;
 }
 section h3 {
   color: #353535;
   font-size: 24px;
-  line-height: 30px;  
-  padding-left: 18px;
+  line-height: 30px; 
+  margin-bottom: 0px;
 }
 .new {
   width: 512px;
-  height: 220px;
+  height: 214px;
   float: left;
   margin-right: 13px;
   margin-bottom: 40px;
   background: url("../img/background-news.jpg") no-repeat;
-  padding: 0 24px;
-  border-radius: 10px;
+  padding: 6px 27px 0 20px;
+  border-radius: 14px;
   font-size: 16px;
   color: #353535;
   line-height: 22px;
+  font-weight: 600;
+}
+.new p {
+  margin-bottom: 7px;
 }
 .news {
   font-size: 24px;
@@ -352,25 +399,23 @@ section h3 {
   background-color: #f8f7f4;
   background-image: url("../img/post.png") ;
   float: right;
-  width: 560px;
+  width: 547px;
   border-radius: 11px;
-  min-height: 220px;
+  padding: 5px 6px;
 
 }
-.post-wrap {
-
-  width: 508px;
-  margin: 0 auto;
-  margin-top: 5px;
-  padding: 29px 16px 0 21px;
+.post-wrap {  
+  padding: 12px 20px 34px 21px;
   background-color: #f8f7f4;
-  min-height: 181px;
   vertical-align: middle;
   border-radius: 10px;
   color: #5a5a5a;
   font-size: 16px;
   line-height: 22px;
  
+}
+.post-wrap p {
+  padding-bottom: 22px;
 }
 .mail {
   border-color: #d2d2d1;
@@ -380,8 +425,8 @@ section h3 {
   padding-bottom: 8px;
   padding-left: 15px;
   border: 1px solid rgba(70, 70, 70, 0.48);
-  border-radius: 4px;
-  min-height: 35px;
+  border-radius: 8px;
+  min-height: 28px;
   font-size: 16px;
   line-height: 24px;
 
@@ -389,6 +434,8 @@ section h3 {
 .location {
   background-image: url("../img/map.jpg");
   height: 430px; 
+  width: 1200px;
+  margin: 0 auto;
   
 }
 .data {
@@ -408,19 +455,20 @@ section h3 {
   line-height: 24px;
   font-weight: 700;
   margin: 0;
+  padding-top: 3px;
 }
 .time-block p {
   margin: 0;
 }
 .time-block {
-  margin-top: 27px;
+  margin-top: 17px;
   margin-bottom: 26px;
 }
 .address-block p {
   margin: 0;
 }
 .address-block {
-  margin-top: 29px;
+  margin-top: 31px;
 }
 .footer {
   margin-top: 20px; 
@@ -429,12 +477,14 @@ section h3 {
   margin-right: auto;
   vertical-align: middle;
   position: relative;
+  width: 1200px;
+  margin: 0 auto;
   
 }
 .social {
-
+  margin-left: 29px;
   float: left;
-  padding-top: 15px;
+  padding-top: 36px;
   margin-right: 205px;
 }
 .social a {
@@ -457,15 +507,15 @@ section h3 {
   box-shadow: inset 0px 2px 1px #888889;
 }
 .footer-navigation {
-  width: 340px;
-  left: 430px;
+  width: 360px;
   display: inline-block;
   vertical-align: middle;
-  position: absolute;
   bottom: 0px;
   font-size: 0;
-  margin: 35px 0 28px 0;
-  padding: 0;
+  margin-bottom: 29px;
+  margin-top: 12px;
+  padding-top: 22px;
+  padding-left: 2px;
   box-sizing: border-box;
 }
 .made {
@@ -475,9 +525,12 @@ section h3 {
   color: #ffffff;
   display: inline-block;
   vertical-align: middle;
-  position: absolute;
-  right: 0;
-
+  float: right;
+  padding-right: 21px;
+  padding-top: 20px;
+}
+.made p {
+  margin:0;
 }
 .made a {  
   color: #ffffff;
@@ -492,20 +545,19 @@ section h3 {
   width: 868px;
 }
 .sort {
-  width: 198px;
   float: left;
   
 }
 .price-filter {
   width: 220px;
   float: left;
-
+  margin-right:10px; 
  
 }
 .fat {
   width: 418px;
   float: right;
-  
+   margin-right: 36px;
 }
 .fills {
   
@@ -513,20 +565,21 @@ section h3 {
   
 }
 .fills-button {
-  width: 150px;
+  width: 142px;
   float: left; 
   vertical-align: bottom; 
 }
 .catalog {
   clear: both;  
-  margin-bottom: 35px;
-  margin-top: 35px;
+  margin-bottom: 0px;
+  margin-top: 23px;
 }
 .pagination {
-  margin-top: 44px;
+  margin-top: 22px;
   padding-bottom: 29px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-align: right; 
+  padding-right: 9px;
  
 } 
 .pagination ul {
@@ -593,6 +646,14 @@ div.basket-tooltip {
   font-size: 13px;
   line-height: 16px;
 }
+.basket-tooltip::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  top: -10px;
+  left: 0;
+}
 
 div a.product-order {
   color: black;
@@ -621,7 +682,6 @@ div a.product-order {
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
-  /*position: absolute;*/
   right: 15px;
   bottom: 82px;
 }
@@ -660,15 +720,16 @@ div a.product-order {
  vertical-align: bottom;
  padding: 0;
  margin-left: 41px;
-
+}
+.basket-order {
+float: right;
+}
+.main-index {
+  margin-top: 31px;
 }
 
-.bread-crumbs li {
-  display: inline-block;
-}
 .bread-crumbs-items {
-  margin-left: 18px;
-  margin-right: 18px;
+ margin-left: 6px;
 }
 .top-main a {
   color: #ffffff;
@@ -677,6 +738,11 @@ div a.product-order {
 
 }
 .navigation {
+  min-width: 480px;
+  float: left; 
+  font-size: 16px;
+  line-height: 18px;
+  padding-left: 13px;
   margin-top: 15px;
 
 }
@@ -684,29 +750,32 @@ div a.product-order {
   margin:0;
   padding: 0;
   font-size: 0;
+  
 }
 .navigation li {
   display: inline-block;
   vertical-align: top;
   font-size: 16px;
   line-height: 18px;
-  padding: 7px 13px;
+  padding-top: 7px;
+  padding-left: 10px;
+  padding-right: 19px;
+
 }
 .navigation a {
   display: block;
-  text-align: left;
-  padding: 7px 13px;
+  text-align: left;  
+  padding-top: 7px;
 
 }
-
-
 .menu-item-link:hover {
   background-color: white;
   color: black;
   border-radius: 45px; 
   padding: 7px 13px;
-}
+  text-align: center;
 
+}
 .login {  
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 40px;
@@ -717,6 +786,7 @@ div a.product-order {
   padding-bottom: 7px;
   padding-right: 17px;
   padding-top: 8px;
+  margin-right: 8px;
   padding-left: 42px;
  }
 .login::before {
@@ -725,9 +795,10 @@ div a.product-order {
   height: 25px;
   position: absolute;
   top: 7px;
-  left: 12px;
+  left: 15px;
   background:  url("../img/enter.png") no-repeat;
 }
+
 
 .search-block-trigger {
   vertical-align: middle;  
@@ -736,12 +807,10 @@ div a.product-order {
   position: relative;
   width: 32px;
   height: 32px;
+  margin-right: 8px;
   vertical-align: top;
 }
-.search-block-trigger:hover {   /*как сделать так чтобы лупа черной стала???? */
-  color: black;
-  background-color: #f8f7f4;
-}
+
 .search-block-trigger::before {
   content: "";
   width: 18px;
@@ -750,7 +819,18 @@ div a.product-order {
   top: 8px;
   left: 7px;
   background: url("../img/loupe.png") no-repeat; 
+  z-index: 20;
 }
+.search-block-trigger:hover {   /*как сделать так чтобы лупа черной стала???? */
+  color: black;
+  background-image: none;
+  background-color: #f8f7f4;
+  background-image: url(../img/loupe-black.png); 
+  background-repeat: no-repeat;  
+  background-position: center;
+  z-index: 61;
+  
+} 
 .user-form {
   position: absolute;
   background-color: #fefefe;
@@ -775,6 +855,21 @@ div a.product-order {
   padding-left: 13px;
   
 }
+.search-block:hover .search-form {
+  margin-top: 4px;
+  z-index: 60;
+  display: block;
+  box-sizing: border-box;
+
+}
+.search-form::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  top: -10px;
+  left: 0;
+}
 
 .login-enter {
   
@@ -798,30 +893,31 @@ div a.product-order {
   padding-left: 13px;
 }
 .login-enter-href a {
-  float: right;
+  
   width: 120px;
   text-align: left;
   color: #363636;
   font-size: 13px;
   line-height: 24px;
   text-decoration: underline;
-  display: inline-block;
+  display: block;
   padding: 0;
 }
 .login-enter-btn {
   margin-top: 19px;
 }
+
 .basket {
   vertical-align: top;
   background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 40px;
+  border-radius: 37px;
   position: relative;
-  min-width: 44px;
-  padding-left: 40px;
+  min-width: 41px;
+  padding-left: 44px;
   text-align: center;
-  padding-top: 8px;
-  padding-right: 32px;
-  padding-bottom: 7px;
+  padding-top: 9px;
+  padding-right: 33px;
+  padding-bottom: 10px;
 }
 .basket:hover {
   color: black;
@@ -833,15 +929,42 @@ div a.product-order {
   height: 23px;
   position: absolute;
   background:  url("../img/basket.png") no-repeat;
-  left: 16px;
-  top: 5px;
+  left: 18px;
+  top: 7px;
 }
-.login:hover {
+.login a:hover {
   color: black;
+}
+.login:hover  {
+  background: url(../img/enter-black.png) no-repeat;
+  background-position-x: 17%; 
+  background-position-y: 43%;  
   background-color: #f8f7f4;
+  z-index: 75;
+}
+.login:hover .login-enter {
+  position: absolute;
+  z-index: 80;
+  display: block;
+  box-sizing: border-box;
+  top: 40px;
+  
+}
+.login-enter-href::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  top: -10px;
+  left: 0px;
+
+
 }
 .basket-toggle {
   background-color: #f7f6f3;
+  padding-right: 18px;
+  padding-top: 6px;
+  font-weight: 600;
 }
 a.basket-toggle {
   color: #050505;
@@ -860,54 +983,23 @@ a.basket-toggle {
 vertical-align: top;
 
 }
-
-.footer-navigation {
-  margin-top: 35px;
-}
 .product-card img {
   width: 265px;
   height: 265px;
   border-radius: 145px;
 }
-.tw,
-.inst,
-.vk,
-.fb {
-  margin-right: 13px;
-  margin-left: 13px;
-  display: inline-block;
-  background-color: #e8ebe9;
-  border: 4px solid #a9b6ad;
-  min-width: 32px;
-  font-size: 0;
-  min-height: 32px;
-  border-radius: 40px;
-  vertical-align:middle; 
-}
-.tw {
-  background: url(../img/tw-icon.png) no-repeat;
-  
-}
-.inst {
-  background: url(../img/insta-icon.png) no-repeat;
-}
-.vk {
-  background: url(../img/vk-icon.png) no-repeat;
-}
-.fb {
-  background: url(../img/fb-icon.png) no-repeat;
-}
 
 .send {
-  padding: 11px 16px 14px 17px;
-  right: 20px;
+  padding: 10px 16px;
+ float: right;
+
 }
 .slider-btn {
   display: inline-block;
-  padding: 12px 50px;
-  font-weight: 600;
-  font-size: 31px;
-  line-height: 41px;
+  padding: 10px 40px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
   vertical-align: top;
   color: #ffffff;
   text-decoration: none;
@@ -935,8 +1027,8 @@ vertical-align: top;
 }
 .slider-controls {
   position: absolute;
-  bottom: 25px;
-  left: 0;
+  bottom: 8px;
+  left: 28px;
   z-index: 20;
   font-size: 0;
 }
@@ -955,20 +1047,21 @@ vertical-align: top;
 .contact {
   display: inline-block;
   width: 50%;
-  font-size: 13px; 
+  font-size: 12px; 
   line-height:18px;
   color: #ffffff;
-  padding-left: 22px;
+  padding-left: 23px;
   margin-right: 0;
+  min-width: 120px;
   box-sizing: border-box;
 
 }
 .heart {
   font-weight: 700;
   background: url("../img/heart-icon.png") no-repeat;
-
+  background-position-y: 5px;
 }
-.modal {
+ .modal {
   position: absolute;
   vertical-align: top;
   display: inline-block;
@@ -1081,10 +1174,12 @@ input:focus {
   background: rgba(0, 0, 0, 0.5);
   display: none;
 }
+
 .menu >li {
-  position: relative;
+  
   display: inline-block;
   vertical-align: top;
+  text-decoration: underline;
 }
 .submenu {
   position: absolute;
@@ -1094,7 +1189,9 @@ input:focus {
   background-color: #f8f7f4;
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.3);
-  display: none;           /*пока закрыла чтобы не мешало*/
+  display: none;     
+  z-index: 80;     
+  overflow: hidden;
 }
 
 .submenu a {
@@ -1130,8 +1227,7 @@ input:focus {
   font-size: 14px;
   line-height: 16px;
   display: inline-block;
-  margin-right: 4px;
-  margin-left: 3px;
+  margin-right: 2px;
   vertical-align: top;
 
 }
@@ -1150,7 +1246,9 @@ input:focus {
 .bread-crumbs a:active {
   color: #ffbc9e;
 }
-
+.bread-crumbs a {
+text-decoration: underline;
+}
 .first-line {
   display: inline-block;
   font-weight: 500;
@@ -1158,26 +1256,45 @@ input:focus {
   line-height: 16px;
   vertical-align: top;
   color: #ffffff;
+  min-width: 895px;
   
 }
 .sort {
-  width: 193px;
   margin: 0;
-  margin-top: 5px;
   padding: 0;
+  width: 193px;
   min-height: 36px;
   overflow: hidden;  
   margin-right: 15px;
+}
+.sort-name {
+  margin-bottom: 7px;
+  padding-left: 16px;
+}
+.sort-wrapper {
+  margin: 0;
+  background-color: #a9bab0;
+  min-height: 28px;
+  border-radius: 45px;
+  color: #ffffff;
+  padding-left: 14px;
+  padding-top: 8px;
 
 }
 .sort-items {
-  width: 192px;
-  margin: 0;
-  background-color: #a9bab0;
-  min-height: 32px;
-  border-radius: 45px;
-  color: #ffffff;
-  text-align: center;
+padding: 0;
+margin: 0;
+border: none;
+background-color: rgba(255,255,255,0);
+outline: none;
+display: block;
+color: #ffffff;
+vertical-align: middle;
+font-size: 16px;
+line-height: 22px;
+min-width: 170px;
+
+
 }
 .sort-items:hover option {
   color: black;
@@ -1186,13 +1303,12 @@ input:focus {
 }
 .cost-filter {
   position: relative;
-  width: 218px;
+  width: 206px;
   height: 19px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 18px;
   padding-top: 16px;
   padding-left: 15px;
-  padding-right: 15px;
 
 }
 
@@ -1235,8 +1351,8 @@ input:focus {
 
 .fills-button {
   margin: 0;
-  margin-left: 11px;
-  padding: 5px 26px 5px 28px;
+  margin-left: 17px;
+  padding: 5px 25px 5px 25px;
   font-weight: 500;
   background-color: #a9bab0;
   border: 2px solid white;
@@ -1267,7 +1383,7 @@ input:focus {
 }
 .fat input[type="radio"] + label {
   margin-bottom: 10px;
-  margin-right: 14px;
+  margin-right: 20px;
   padding-left: 31px;
   position: relative; 
   cursor: pointer;
@@ -1316,16 +1432,18 @@ input:focus {
 
 }
 .fills-ice-cream .fills {
-    min-height: 16px;
-  padding: 10px 16px 10px 16px;
+  min-height: 16px;
+  padding: 10px 18px 10px 18px;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(255, 255, 255, 0.2);
-border-radius: 18px;
+  border-radius: 18px;
+  font-size: 16px;
+  line-height: 18px;
 }
 .fills-ice-cream input[type="checkbox"] + label {
   margin-bottom: 10px;
   margin-right: 18px;
-  padding-left: 31px;
+  padding-left: 32px;
   position: relative; 
   cursor: pointer;
   position: relative;
@@ -1353,7 +1471,7 @@ border-radius: 18px;
   height: 10px;
   top: 4px;
   left: 2px;
-  background-image: url(../img/checkbox-on.png);
+  background-image: url(../img/checkbox-onn.png);
   background-repeat: no-repeat;
   position: absolute;
 }
@@ -1363,19 +1481,58 @@ border-radius: 18px;
   height: 16px;
   border: 2px solid rgba(255, 255, 255, 1);
 } 
+.fills-name {
+  margin-bottom: 2px;
+  padding-left: 16px;
+}
+.tw,
+.inst,
+.vk,
+.fb {
+  display: inline-block;
+  background-color: #e6ebe9;
+  border: 4px solid #a9b6ad;
+  min-width: 32px;
+  font-size: 0;
+  min-height: 32px;
+  border-radius: 40px;
+  vertical-align:middle; 
+}
+.tw {
+  background: url(../img/tw-icon.png) no-repeat;
+  
+}
+.inst {
+  background: url(../img/insta-icon.png) no-repeat;
+}
+.vk {
+  background: url(../img/vk-icon.png) no-repeat;
+}
+.fb {
+  background: url(../img/fb-icon.png) no-repeat;
+}
+.feedback {
+  padding: 9px 28px;
+}
+.catalog-ice {
+  margin-top: 22px;
+  margin-left: 27px;
+}
+
+.link-active {
+  background-color: #ba6f5a;
+  border-radius: 45px;
+  text-decoration: none;
+  padding: 7px 13px;
+}
+.catalog-navigation {
+  padding-left: 0;
+}
 
 /*ВОПРОСЫ:
 
-1) Почему в выподающем меню только 2 ссылки выделяются на главной странице, а на второй нормально все.И как сделать полоску у меня почему-то не получается через псевдоэлементы after и before????
-2) В меню user как при наведении как корзину,лупу и вход сделать черным???
-3)При наведении на полную корзину содержимое появляется но бысто исчезает. Как это исправить?
-4) Что я сделала не так в продукт-кард??? Почему все равно вытянулась так???
-5) Я нормально сделала див post??? Я пыталась сделать бордер-имейдж, но у меня не получалось.
-6)Как сделать чтобы карта была на весь экран?
-7) В футере "экологические стандарты" в одну строчку не хотят становиться, почему?
-8)В полной корзине текст как нормально выровнять? У меня не получается, сьезжает то одно, то другое.
-9) Как выровнять фильтры? Почему по цене ТАК улетела? 
-10) Почему в наполнителях когда выделяешь не галочка ставиться,а фигня какая-то?
-11) Как сделать,что бы у выподающего окна при наведении тоже были скругленные края у тервого и последнего пункта?
-12) Фильтр сортировка в хроме нормально показывает, а в мозиле по-дурацки. Как это исправить?
-*/
+1) Я равняла по макету и теперь когда на навинацию нажимаю, ссылки прыгают. Пытаюсь менять обводка в наведенном состоянии едет. Что делать не пойму?
+2) В меню user как при наведении я впихнула туда черные значки, но как сделать так чтобы и белые исчезли? И еще черной корзины нет, есть только полная и белая.
+3) На главной страницк я ровняла все по макету, вроде норм. Но теперь немного в каталоге поехало. Им чтоже всем доп классы делать???
+4) Футер на главной тоже сделала,а в каталоге поехало. Плюс в футере в навигации как настолько уменьшить растояние между 2 столбцами, чтобы ничего не уехало. Каждой ссылке свой класс что ли?
+5) Для наполнителей я вырезала одну только галочку, а ставится опять фигня какая-то(
