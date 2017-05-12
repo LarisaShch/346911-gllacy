@@ -211,52 +211,107 @@ h2 {
   margin-top: 15px;
 }
 .pages-wrapper {
-  padding: 0 27px;
+  margin: 0 auto;
+  width: 1200px;
+  padding: 0 14px;
 }
-.blog {
-  padding-left: 27px;
-  padding-right: 27px;
-}
+
+
 .product-card {
   position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 293px;
+  min-height: 362px;
+
+  /*position: relative;
   vertical-align: top;
   float: left;
   width: 267px;
   margin-right: 26px;
   margin-bottom: 50px;
   min-height: 322px;
-  text-align: center;  
+  text-align: center;  */
 }
-.last-product {
-  margin-right: 0;
-}
+
 .product-item {
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  width: 293px;
+  min-height: 409px;
+  padding: 9px 13px 21px 13px;
+  border-radius: 5px;
+  z-index: 40;
+
+
+  /*position: absolute;
   border-radius: 4px;
   width: 275px;
   padding: 9px 9px 16px 9px;
   z-index: 40;
-  background-color: inherit;
+  background-color: inherit;*/
 }
 .offer-look {
+  position: absolute;
+  display: none;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  padding: 11px;
+  width: 200px;
+  height: 44px;
+  text-align: center;
+  text-decoration: none;
+  color: #fefefe;
+  font-size: 18px;
+  line-height: 22px;
+  border-radius: 18px / 22px 22px 22px 22px;
+  background-clip: padding-box;
+  background-color: #e74d37;
+  box-shadow: 0 1px 2px #ab1000;
+  background-image: linear-gradient(bottom, #e74a35 0%, #f16843 100%);
+
+
+
   display: none;
 }
 .product-card:hover .product-item {
-  background-color: rgba(247, 247, 244, 0.3); 
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 50
+
+  /*background-color: rgba(247, 247, 244, 0.3); 
   min-height: 405px;
-  z-index: 50;
+  z-index: 50;*/
 } 
 .product-card:hover .offer-look {
-  display: inline-block;
+ display: block;
+  z-index: 95;
+
+ /* display: inline-block;
   z-index: 95;
   vertical-align: top;
   position: absolute;
   top: 350px;
-  right: 45px;
+  right: 45px;*/
 }
  .product-hit::after {
   content: "";
   position: absolute;
+  top: 9px;
+  left: 13px;
+  width: 61px;
+  height: 61px;
+  background-image: url("../img/hit.jpg");
+  background-repeat: no-repeat;
+  background-position: cover;
+  border-radius: 50%;
+  z-index: 50;
+
+  /*position: absolute;
   left: 0;
   top: 10px;
   height: 61px;
@@ -264,21 +319,24 @@ h2 {
   background-color: inherit;
   background-image: url("../img/hit.jpg");
   z-index: 50;
-  border-radius: 50px;
+  border-radius: 50px;*/
+}
+.less {
+  font-size: 30px;
 }
 .rubles {
-  position: absolute;
+ position: absolute;
   top: 180px;
-  left: -13px;
-  text-align: left;
+  left: 13px;
   font-weight: 700;
   font-size: 30px;
   line-height: 45px;
   color: #ffffff;
-  margin-left: 13px;
   margin-bottom: 0;
 }
-.ruble {  
+ .ruble { 
+  color: #fff;
+  font-weight: 700;
   margin-right: 0;
   padding-right: 35px;
   font-size: 45px;
@@ -293,13 +351,22 @@ h2 {
   top: 6px;
   left: 81px;
 }
+
 .item {
   margin: 0;
-  margin-top: 10px;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  position: relative;
+  width: 267px;
+  margin-right: 26px;
+  display: inline-block;
+  vertical-align: top;
+
+
 }
 .product-item-content a {
-  /*position: relative;  
-  z-index: 20;*/
+  padding-left: 13px;
   line-height: 22px;
   font-size: 16px;
   color: #ffffff;
@@ -317,13 +384,14 @@ h2 {
 section.about {
   width: 1126px;
   margin:0 27px; 
-  margin-bottom: 35px;
+  margin-bottom: 38px;
   background: url("../img/waffles-background.jpg"); 
   border-radius: 15px;  
   color: #353535;
   font-size: 0;
   padding-left: 20px;
   padding-top: 3px;
+  margin-top: 11px;
 }
 .about p {
   display: inline-block;
@@ -347,7 +415,7 @@ section.about {
   background: url("../img/leaves-icon.png") no-repeat;
   background-position-y: 0px;
   padding-top: 11px;
-  padding-bottom: 29px;
+  padding-bottom: 25px;
 }
 .cow-icon {
   background: url("../img/Cow-icon.png") no-repeat;
@@ -361,7 +429,7 @@ section.about {
   background-position-y: 0px;
   background-position-x: 2px;
   padding-top: 14px;
-  padding-bottom: 29px;
+  padding-bottom: 25px;
 }
 section h3 {
   color: #353535;
@@ -384,7 +452,8 @@ section h3 {
   font-weight: 600;
 }
 .new p {
-  margin-bottom: 7px;
+  margin-bottom: 4px;
+  margin-top: 19px;
 }
 .news {
   font-size: 24px;
@@ -395,13 +464,14 @@ section h3 {
   max-width: 287px;  
 }
 .post {
-
+  height: 211px;
   background-color: #f8f7f4;
   background-image: url("../img/post.png") ;
   float: right;
   width: 547px;
-  border-radius: 11px;
+  border-radius: 14px;
   padding: 5px 6px;
+  margin-right: 2px;
 
 }
 .post-wrap {  
@@ -426,7 +496,7 @@ section h3 {
   padding-left: 15px;
   border: 1px solid rgba(70, 70, 70, 0.48);
   border-radius: 8px;
-  min-height: 28px;
+  min-height: 27px;
   font-size: 16px;
   line-height: 24px;
 
@@ -449,20 +519,26 @@ section h3 {
   margin-top: 60px;
 
 }
+.address-first {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 0;
+}
 
 .address {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   margin: 0;
-  padding-top: 3px;
+  padding-top: 5px;
 }
 .time-block p {
   margin: 0;
 }
 .time-block {
-  margin-top: 17px;
-  margin-bottom: 26px;
+  margin-top: 19px;
+  margin-bottom: 25px;
 }
 .address-block p {
   margin: 0;
@@ -514,7 +590,7 @@ section h3 {
   font-size: 0;
   margin-bottom: 29px;
   margin-top: 12px;
-  padding-top: 22px;
+  padding-top: 19px;
   padding-left: 2px;
   box-sizing: border-box;
 }
@@ -527,7 +603,7 @@ section h3 {
   vertical-align: middle;
   float: right;
   padding-right: 21px;
-  padding-top: 20px;
+  padding-top: 18px;
 }
 .made p {
   margin:0;
@@ -573,13 +649,19 @@ section h3 {
   clear: both;  
   margin-bottom: 0px;
   margin-top: 23px;
+  margin-left: 0;
+  margin-right: 0;
 }
 .pagination {
-  margin-top: 22px;
+  margin-top: 51px;
   padding-bottom: 29px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-align: right; 
-  padding-right: 9px;
+  padding-right: 7px;
+  line-height: 18px;
+  font-size: 16px;
+  margin-bottom: 0px;
+
  
 } 
 .pagination ul {
@@ -636,11 +718,12 @@ div.basket-tooltip {
   position: absolute;
   display: none;
   background-color: #f7f7f4;
-  width: 540px;
-  min-height:241px;
-  right: -5px;
-  top: 58px;
+  width: 517px;
+  min-height:200px;
+  right: 0px;
+  top: 40px;
   color: black;  
+  padding: 19px 14px;
   z-index: 15;
   border-radius: 5px;
   font-size: 13px;
@@ -675,15 +758,58 @@ div a.product-order {
   right: 15px;
   bottom: 15px;
 }
-.order {
-  padding-top: 20px;
+.item-one {
+  position: absolute;
+  left: 0px;
+  top: 19px;
 }
+.item-two {
+  left: 0px;
+  position: absolute;
+  top: 75px;
+}
+.product-order-one {
+  position: absolute;
+  top: 28px;
+  left: 75px;
+}
+.product-order-two {
+  position: absolute;
+  top: 80px;
+  left: 75px;
+}
+.count-one {
+  position: absolute;
+  top: 28px;
+  right: 115px;
+}
+.count-two {
+  top: 80px;
+  position: absolute;
+  right: 115px;
+}
+.total-two {
+  position: absolute;
+  right: 40px;
+  top: 80px;
+}
+.total-one {
+  position: absolute;
+  top: 28px;
+  right: 40px;
+}
+.summary {
+  position: absolute;
+  right: 15px;
+  top: 148px;
+}
+
+
 .result {
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
-  right: 15px;
-  bottom: 82px;
+  
 }
 .delete {
   width: 11px;
@@ -723,9 +849,10 @@ div a.product-order {
 }
 .basket-order {
 float: right;
+position: relative;
 }
 .main-index {
-  margin-top: 31px;
+  margin-top: 22px;
 }
 
 .bread-crumbs-items {
@@ -742,8 +869,8 @@ float: right;
   float: left; 
   font-size: 16px;
   line-height: 18px;
-  padding-left: 13px;
-  margin-top: 15px;
+  padding-left: 11px;
+  margin-top: 24px;
 
 }
 .navigation ul {
@@ -752,29 +879,21 @@ float: right;
   font-size: 0;
   
 }
-.navigation li {
+.navigation a {
   display: inline-block;
   vertical-align: top;
   font-size: 16px;
   line-height: 18px;
-  padding-top: 7px;
-  padding-left: 10px;
-  padding-right: 19px;
-
-}
-.navigation a {
+  padding: 7px 13px;
   display: block;
-  text-align: left;  
-  padding-top: 7px;
+  text-align: left; 
 
 }
 .menu-item-link:hover {
   background-color: white;
   color: black;
   border-radius: 45px; 
-  padding: 7px 13px;
-  text-align: center;
-
+  
 }
 .login {  
   background-color: rgba(255, 255, 255, 0.2);
@@ -799,6 +918,43 @@ float: right;
   background:  url("../img/enter.png") no-repeat;
 }
 
+.login:hover::before {
+  background: url(../img/enter-black.png) no-repeat;
+  background-position-x: 17%; 
+  background-position-y: 43%;  
+  background-color: #ffffff;
+  color: black;
+  border-radius: 40px;
+  width: 33px;
+  vertical-align: top;
+  padding-right: 17px;
+  padding-top: 8px;
+  margin-right: 8px;
+  padding-left: 42px;
+  top: 0px;
+  left: 0px;
+
+}
+.login a:hover {
+  color: black;
+}
+.login:hover .login-enter {
+  position: absolute;
+  z-index: 80;
+  display: block;
+  box-sizing: border-box;
+  top: 40px;
+  
+}
+.login-enter-href::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  top: -10px;
+  left: 0px;
+
+}
 
 .search-block-trigger {
   vertical-align: middle;  
@@ -821,15 +977,19 @@ float: right;
   background: url("../img/loupe.png") no-repeat; 
   z-index: 20;
 }
-.search-block-trigger:hover {   /*как сделать так чтобы лупа черной стала???? */
+.search-block-trigger:hover::before {   
   color: black;
-  background-image: none;
-  background-color: #f8f7f4;
   background-image: url(../img/loupe-black.png); 
   background-repeat: no-repeat;  
   background-position: center;
-  z-index: 61;
-  
+  background-color: #ffffff;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border-radius: 40px;
+  margin-right: 8px;
+  top: 0px;
+  left: 0px;
 } 
 .user-form {
   position: absolute;
@@ -841,19 +1001,27 @@ float: right;
   z-index: 65;
   border-radius: 5px;
   background-color: #f7f7f4;
+
   
 }
 .user-form {
   display: block;
 }
 .search-form input {
+  position: relative;
   width: 294px;
   margin: 20px 15px;  
   min-height: 44px;
   border-radius: 5px;
   border: 1px solid #d2d2d1;
   padding-left: 13px;
+  font-size: 14px;
+  line-height: 24px;
   
+}
+.search-form {
+  top: 54px;
+  right: 271px;
 }
 .search-block:hover .search-form {
   margin-top: 4px;
@@ -902,6 +1070,7 @@ float: right;
   text-decoration: underline;
   display: block;
   padding: 0;
+  padding-left: 20px;
 }
 .login-enter-btn {
   margin-top: 19px;
@@ -917,54 +1086,47 @@ float: right;
   text-align: center;
   padding-top: 9px;
   padding-right: 33px;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
 }
-.basket:hover {
-  color: black;
-  background-color: #f8f7f4;
-}
+
+
 .basket::before {
   content: "";
   width: 23px;
   height: 23px;
   position: absolute;
   background:  url("../img/basket.png") no-repeat;
-  left: 18px;
+  right: 77px;
   top: 7px;
 }
-.login a:hover {
+.basket:hover::before {
   color: black;
-}
-.login:hover  {
-  background: url(../img/enter-black.png) no-repeat;
-  background-position-x: 17%; 
-  background-position-y: 43%;  
-  background-color: #f8f7f4;
-  z-index: 75;
-}
-.login:hover .login-enter {
-  position: absolute;
-  z-index: 80;
-  display: block;
-  box-sizing: border-box;
-  top: 40px;
+  background-color: #ffffff;
+  background: url("../img/basket-black.png") no-repeat;
   
-}
-.login-enter-href::before {
-  content: "";
   position: absolute;
-  width: 100%;
-  height: 10px;
-  top: -10px;
-  left: 0px;
-
-
+  min-width: 41px;
+  text-align: center; 
+  top: 7px;
+  right: 60px;
+}
+.basket:hover {
+  border-radius: 37px;
+  position: relative;
+  min-width: 41px;
+  padding-left: 44px;
+  text-align: center;
+  padding-top: 9px;
+  padding-right: 33px;
+  padding-bottom: 10px;
+  background-color: #ffffff;
+  color: black; 
 }
 .basket-toggle {
   background-color: #f7f6f3;
-  padding-right: 18px;
-  padding-top: 6px;
   font-weight: 600;
+
+  padding-right: 16px;
 }
 a.basket-toggle {
   color: #050505;
@@ -977,16 +1139,38 @@ a.basket-toggle {
   background: url("../img/basket-full.png") no-repeat;
   left: 16px;
   top: 7px;
-
+  padding:0;
+}
+.basket-toggle:hover::before {
+  position: absolute;
+  background: url("../img/basket-full.png") no-repeat;
+  left: 16px;
+  top: 7px;
+  
+}
+.basket-toggle:hover {
+  padding-right: 16px;
+  padding-bottom: 8px;
 }
 .basket-order {
 vertical-align: top;
 
 }
+.product-img {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  width: 267px;
+  height: 267px;
+  border-radius: 50%;
+  overflow: hidden;
+}
 .product-card img {
-  width: 265px;
+  display: block;
+  width: 100%;
+
+  /*width: 265px;
   height: 265px;
-  border-radius: 145px;
+  border-radius: 145px;*/
 }
 
 .send {
@@ -1046,14 +1230,15 @@ vertical-align: top;
 
 .contact {
   display: inline-block;
-  width: 50%;
   font-size: 12px; 
   line-height:18px;
   color: #ffffff;
   padding-left: 23px;
   margin-right: 0;
-  min-width: 120px;
+  min-width: 140px;
   box-sizing: border-box;
+  font-size: 12px;
+  line-height: 18px;
 
 }
 .heart {
@@ -1077,7 +1262,7 @@ vertical-align: top;
   left: 530px;
   top: 350px;
   z-index: 80;
-  display: none;   /*скрыла пока что*/
+  display: none;   
 }
 .modal h5 {
   margin: 0;
@@ -1175,11 +1360,36 @@ input:focus {
   display: none;
 }
 
+
+
+
+.feedback:hover .modal {  /*почему форма не выскакивает?*/
+  
+  position: fixed;
+  top: 50%;
+  display: block;
+  left: 50%;
+  z-index: 300;
+
+}
+
+
+
+
+
+
+
 .menu >li {
   
   display: inline-block;
   vertical-align: top;
-  text-decoration: underline;
+}
+.menu a:after {            /*вообще не поняла про это подчеркивание.Зачем лефт и райт 14?*/
+  left: 14px;
+  right: 14px;
+  height: 3px;
+  background-color: rgba(247,242,242,0.3);
+  bottom: 3px;
 }
 .submenu {
   position: absolute;
@@ -1212,11 +1422,10 @@ input:focus {
   background-color: #f6b5a5;
   width: 103px;
 }
-.user-form {
-  display: none;         
-}
+
 .menu-item:hover .submenu {
   display:block;
+  margin-top: 5px;
 } 
 .menu-item {
   margin-bottom: 45px;
@@ -1258,6 +1467,9 @@ text-decoration: underline;
   color: #ffffff;
   min-width: 895px;
   
+}
+.user-form {
+  display: none;
 }
 .sort {
   margin: 0;
@@ -1433,7 +1645,7 @@ min-width: 170px;
 }
 .fills-ice-cream .fills {
   min-height: 16px;
-  padding: 10px 18px 10px 18px;
+  padding: 12px 18px 7px 16px;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 18px;
@@ -1469,7 +1681,7 @@ min-width: 170px;
   content: "";
   width: 14px;
   height: 10px;
-  top: 4px;
+  top: 3px;
   left: 2px;
   background-image: url(../img/checkbox-onn.png);
   background-repeat: no-repeat;
@@ -1490,7 +1702,7 @@ min-width: 170px;
 .vk,
 .fb {
   display: inline-block;
-  background-color: #e6ebe9;
+  background-color: #ffffff;
   border: 4px solid #a9b6ad;
   min-width: 32px;
   font-size: 0;
@@ -1515,7 +1727,7 @@ min-width: 170px;
   padding: 9px 28px;
 }
 .catalog-ice {
-  margin-top: 22px;
+  margin-top: 19px;
   margin-left: 27px;
 }
 
@@ -1525,14 +1737,242 @@ min-width: 170px;
   text-decoration: none;
   padding: 7px 13px;
 }
-.catalog-navigation {
-  padding-left: 0;
+
+.product-item:nth-child(4n) {
+  margin-right: 0;
+  padding-right: 0;
+}
+.item-active::after {
+  content: "";
+  position: absolute;
+  top: 39px;
+  right: 9px;
+  left: 9px;
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.2);
+
 }
 
-/*ВОПРОСЫ:
+.blog {
+  padding-left: 27px;
+  padding-right: 27px;
+}
 
-1) Я равняла по макету и теперь когда на навинацию нажимаю, ссылки прыгают. Пытаюсь менять обводка в наведенном состоянии едет. Что делать не пойму?
-2) В меню user как при наведении я впихнула туда черные значки, но как сделать так чтобы и белые исчезли? И еще черной корзины нет, есть только полная и белая.
-3) На главной страницк я ровняла все по макету, вроде норм. Но теперь немного в каталоге поехало. Им чтоже всем доп классы делать???
-4) Футер на главной тоже сделала,а в каталоге поехало. Плюс в футере в навигации как настолько уменьшить растояние между 2 столбцами, чтобы ничего не уехало. Каждой ссылке свой класс что ли?
-5) Для наполнителей я вырезала одну только галочку, а ставится опять фигня какая-то(
+
+
+
+
+
+
+
+
+.catalog {
+
+font-size: 0;
+
+}
+
+
+
+/*.item-img {
+
+position: relative;
+
+z-index: 1;
+
+
+
+border-radius: 50%;
+
+}*/
+
+
+
+
+
+
+/*
+.catalog-items .item {
+
+margin-bottom: 38px;
+
+}
+
+
+
+.popular-item::before {
+
+content: "";
+
+position: absolute;
+
+top: 0;
+
+left: 0;
+
+z-index: 35;
+
+
+
+width: 61px;
+
+height: 61px;
+
+
+
+background-image: url(../img/hit.png);
+
+background-repeat: no-repeat;
+
+}
+
+
+
+.item:nth-child(4n) {
+
+margin-right: 0;
+
+}
+
+
+
+.item .item-title {
+
+position: relative;
+
+z-index: 30;
+
+
+
+width: 260px;
+
+margin: 0;
+
+margin-top: 7px;
+
+margin-left: 4px;
+
+
+
+font-weight: 500;
+
+font-size: 16px;
+
+line-height: 22px;
+
+}
+
+
+
+.item .btn {
+
+position: absolute;
+
+bottom: -54px;
+
+left: 28px;
+
+z-index: 20;
+
+
+
+display: none;
+
+}
+
+
+
+.item::after {
+
+content: "";
+
+position: absolute;
+
+top: -5px;
+
+right: -12px;
+
+bottom: -74px;
+
+left: -12px;
+
+
+
+display: none;
+
+
+
+background-color: rgba(255, 255, 255, 0.3);
+
+border-radius: 8px;
+
+box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+
+}
+
+
+
+.item .price {
+
+position: absolute;
+
+top: 204px;
+
+left: 0;
+
+z-index: 40;
+
+
+
+font-weight: 700;
+
+font-size: 30px;
+
+line-height: 40px;
+
+
+
+filter: drop-shadow(0 1px 2px rgba(49, 50, 53, 0.50));
+
+}
+
+
+
+.left-price {
+
+padding-right: 34px;
+
+
+
+font-size: 45px;
+
+line-height: 55px;
+
+
+
+background-image: url("../img/r.png");
+
+background-repeat: no-repeat;
+
+background-position: 80px 12px;
+
+}
+
+
+
+.item:hover::after,
+
+.item:hover .btn {
+
+display: block;
+
+}
+
+
+
+.item:hover {
+
+z-index: 50;
+
+}
+*
