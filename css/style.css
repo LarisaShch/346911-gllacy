@@ -876,6 +876,8 @@ position: relative;
   padding-top: 8px;
   margin-right: 8px;
   padding-left: 42px;
+  font-size: 14px;
+  line-height: 16px;
  }
 .login::before {
   content: "";
@@ -903,10 +905,9 @@ position: relative;
   top: 0px;
   left: 0px;
 
+
 }
-.login a:hover {
-  color: black;
-}
+
 .login:hover .login-enter {
   position: absolute;
   z-index: 80;
@@ -923,6 +924,10 @@ position: relative;
   top: -10px;
   left: 0px;
 
+}
+.login:hover a {
+  color: black;
+  position: relative;
 }
 
 .search-block-trigger {
@@ -990,7 +995,7 @@ position: relative;
 }
 .search-form {
   top: 54px;
-  right: 271px;
+  right: 255px;
 }
 .search-block:hover .search-form {
   margin-top: 4px;
@@ -1011,9 +1016,9 @@ position: relative;
 .login-enter {
   
   top: 49px;
-  left: -117px;
-  min-height: 176px
-  width: 241px;
+  right: 0px;
+  min-height: 176px;
+  min-width: 241px;
   padding: 19px 17px 19px 19px;
   display: inline-block;
   font-size: 18px;
@@ -1232,7 +1237,7 @@ vertical-align: top;
   top: 50%;
   transform: translate(-50%, -50%);
 
-  /*display: none;*/   
+  display: none; 
 }
 .modal h5 {
   margin: 0;
@@ -1339,14 +1344,14 @@ input:focus {
 .menu-item a {
   position: relative;
 }
-.menu-item a:after { 
+.menu-item :after { 
   content: "";
   position: absolute;       
-  left: 0px;
-  right: 0px;
-  height: 2px;
+  left: 13px;
+  right: 13px;
+  height: 1px;
   background-color: rgba(247,242,242,0.3);
-  top: 25px;
+  bottom: 7px;
 }
 .submenu {
   position: absolute;
@@ -1706,8 +1711,8 @@ min-width: 170px;
   top: 39px;
   right: 9px;
   left: 9px;
-  height: 3px;
-  background-color: rgba(209, 209, 206, 0.2);
+  height: 2px;
+  background-color: rgba(176, 176, 173, 0.3);
 
 }
 
