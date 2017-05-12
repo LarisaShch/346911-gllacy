@@ -1013,42 +1013,6 @@ position: relative;
   left: 0;
 }
 
-.login-enter {
-  
-  top: 49px;
-  right: 0px;
-  min-height: 176px;
-  min-width: 241px;
-  padding: 19px 17px 19px 19px;
-  display: inline-block;
-  font-size: 18px;
-  line-height: 24px;  
-  background-color: #f7f7f4;
-  
-}
-.login-enter input {
-  width: 239px;
-  min-height: 40px;
-  margin-top: 20px;
-  border-radius: 5px;
-  border: 1px solid #d2d2d1;
-  padding-left: 13px;
-}
-.login-enter-href a {
-  
-  width: 120px;
-  text-align: left;
-  color: #363636;
-  font-size: 13px;
-  line-height: 24px;
-  text-decoration: underline;
-  display: block;
-  padding: 0;
-  padding-left: 20px;
-}
-.login-enter-btn {
-  margin-top: 19px;
-}
 
 .basket {
   vertical-align: top;
@@ -1728,3 +1692,39 @@ font-size: 0;
 }
 
 
+.login-enter {
+  
+  top: 49px;
+  right: 0px;
+  min-height: 176px;
+  min-width: 241px;
+  padding: 19px 17px 19px 19px;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 24px;  
+  background-color: #f7f7f4;
+  
+}
+.login-enter input {
+  width: 239px;
+  min-height: 40px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px solid #d2d2d1;
+  padding-left: 13px;
+}
+.login-enter-href a {
+  
+  width: 120px;
+  text-align: left;
+  color: #363636;
+  font-size: 13px;
+  line-height: 24px;
+  text-decoration: underline;
+  display: block;
+  padding: 0;
+  padding-left: 20px;
+}
+.login-enter-btn {
+  margin-top: 19px;
+}
