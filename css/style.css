@@ -224,14 +224,6 @@ h2 {
   width: 293px;
   min-height: 362px;
 
-  /*position: relative;
-  vertical-align: top;
-  float: left;
-  width: 267px;
-  margin-right: 26px;
-  margin-bottom: 50px;
-  min-height: 322px;
-  text-align: center;  */
 }
 
 .product-item {
@@ -246,13 +238,6 @@ h2 {
   border-radius: 5px;
   z-index: 40;
 
-
-  /*position: absolute;
-  border-radius: 4px;
-  width: 275px;
-  padding: 9px 9px 16px 9px;
-  z-index: 40;
-  background-color: inherit;*/
 }
 .offer-look {
   position: absolute;
@@ -283,20 +268,10 @@ h2 {
   background-color: rgba(255, 255, 255, 0.3);
   z-index: 50
 
-  /*background-color: rgba(247, 247, 244, 0.3); 
-  min-height: 405px;
-  z-index: 50;*/
 } 
 .product-card:hover .offer-look {
  display: block;
   z-index: 95;
-
- /* display: inline-block;
-  z-index: 95;
-  vertical-align: top;
-  position: absolute;
-  top: 350px;
-  right: 45px;*/
 }
  .product-hit::after {
   content: "";
@@ -311,15 +286,6 @@ h2 {
   border-radius: 50%;
   z-index: 50;
 
-  /*position: absolute;
-  left: 0;
-  top: 10px;
-  height: 61px;
-  width: 61px;  
-  background-color: inherit;
-  background-image: url("../img/hit.jpg");
-  z-index: 50;
-  border-radius: 50px;*/
 }
 .less {
   font-size: 30px;
@@ -714,6 +680,8 @@ section h3 {
   width: 28px;
   height: 28px;
 }
+
+
 div.basket-tooltip {
   position: absolute;
   display: none;
@@ -864,6 +832,7 @@ position: relative;
   display: inline-block; 
 
 }
+
 .navigation {
   min-width: 480px;
   float: left; 
@@ -1247,9 +1216,7 @@ vertical-align: top;
   background-position-y: 5px;
 }
  .modal {
-  position: absolute;
-  vertical-align: top;
-  display: inline-block;
+  
   margin: 0;
   padding: 0;
   width: 453px;
@@ -1259,10 +1226,13 @@ vertical-align: top;
   background-color: #f7f7f4;
   border-radius: 10px;
   padding-left: 24px;
-  left: 530px;
-  top: 350px;
   z-index: 80;
-  display: none;   
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  /*display: none;*/   
 }
 .modal h5 {
   margin: 0;
@@ -1300,9 +1270,9 @@ textarea {
   padding-left: 14px;
   margin-bottom: 22px;
 }
-.modal:hover input[type="text"],
-.modal:hover input[type="email"],
-.modal:hover textarea {
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover {
   padding-top: 6px;
   padding-bottom: 5px;
   padding-left: 13px;
@@ -1361,35 +1331,22 @@ input:focus {
 }
 
 
-
-
-.feedback:hover .modal {  /*почему форма не выскакивает?*/
-  
-  position: fixed;
-  top: 50%;
-  display: block;
-  left: 50%;
-  z-index: 300;
-
-}
-
-
-
-
-
-
-
 .menu >li {
   
   display: inline-block;
   vertical-align: top;
 }
-.menu a:after {            /*вообще не поняла про это подчеркивание.Зачем лефт и райт 14?*/
-  left: 14px;
-  right: 14px;
-  height: 3px;
+.menu-item a {
+  position: relative;
+}
+.menu-item a:after { 
+  content: "";
+  position: absolute;       
+  left: 0px;
+  right: 0px;
+  height: 2px;
   background-color: rgba(247,242,242,0.3);
-  bottom: 3px;
+  top: 25px;
 }
 .submenu {
   position: absolute;
@@ -1440,6 +1397,7 @@ input:focus {
   vertical-align: top;
 
 }
+
 .bread-crumbs ul {
   margin: 0;
   margin-top: 25px;
@@ -1749,7 +1707,7 @@ min-width: 170px;
   right: 9px;
   left: 9px;
   height: 3px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(209, 209, 206, 0.2);
 
 }
 
@@ -1758,14 +1716,6 @@ min-width: 170px;
   padding-right: 27px;
 }
 
-
-
-
-
-
-
-
-
 .catalog {
 
 font-size: 0;
@@ -1773,206 +1723,3 @@ font-size: 0;
 }
 
 
-
-/*.item-img {
-
-position: relative;
-
-z-index: 1;
-
-
-
-border-radius: 50%;
-
-}*/
-
-
-
-
-
-
-/*
-.catalog-items .item {
-
-margin-bottom: 38px;
-
-}
-
-
-
-.popular-item::before {
-
-content: "";
-
-position: absolute;
-
-top: 0;
-
-left: 0;
-
-z-index: 35;
-
-
-
-width: 61px;
-
-height: 61px;
-
-
-
-background-image: url(../img/hit.png);
-
-background-repeat: no-repeat;
-
-}
-
-
-
-.item:nth-child(4n) {
-
-margin-right: 0;
-
-}
-
-
-
-.item .item-title {
-
-position: relative;
-
-z-index: 30;
-
-
-
-width: 260px;
-
-margin: 0;
-
-margin-top: 7px;
-
-margin-left: 4px;
-
-
-
-font-weight: 500;
-
-font-size: 16px;
-
-line-height: 22px;
-
-}
-
-
-
-.item .btn {
-
-position: absolute;
-
-bottom: -54px;
-
-left: 28px;
-
-z-index: 20;
-
-
-
-display: none;
-
-}
-
-
-
-.item::after {
-
-content: "";
-
-position: absolute;
-
-top: -5px;
-
-right: -12px;
-
-bottom: -74px;
-
-left: -12px;
-
-
-
-display: none;
-
-
-
-background-color: rgba(255, 255, 255, 0.3);
-
-border-radius: 8px;
-
-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-
-}
-
-
-
-.item .price {
-
-position: absolute;
-
-top: 204px;
-
-left: 0;
-
-z-index: 40;
-
-
-
-font-weight: 700;
-
-font-size: 30px;
-
-line-height: 40px;
-
-
-
-filter: drop-shadow(0 1px 2px rgba(49, 50, 53, 0.50));
-
-}
-
-
-
-.left-price {
-
-padding-right: 34px;
-
-
-
-font-size: 45px;
-
-line-height: 55px;
-
-
-
-background-image: url("../img/r.png");
-
-background-repeat: no-repeat;
-
-background-position: 80px 12px;
-
-}
-
-
-
-.item:hover::after,
-
-.item:hover .btn {
-
-display: block;
-
-}
-
-
-
-.item:hover {
-
-z-index: 50;
-
-}
-*
