@@ -3,19 +3,18 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Глейси</title>
+		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" type="text/css">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<input type="radio" id="btn-1" name="toggle" checked>
-    	<input type="radio" id="btn-2" name="toggle">
-    	<input type="radio" id="btn-3" name="toggle">
+		<input type="radio" id="btn-2" name="toggle">
+		<input type="radio" id="btn-3" name="toggle">
 		<div class="page-wrapper">
 			<header class="top-main">
 				<div class="top-case clearfix">
-					<a href="#" class="logo">
-						<img src="img/logo.png" alt="logo">
-					</a>
+					<img src="img/logo.png" alt="logo" class="logo">
 					<nav class="navigation">
 						<ul class="menu">
 							<li class="menu-item">
@@ -25,7 +24,7 @@
 										<a href="#" class="submenu-item-main item-active">Новинки</a> 
 									</li>
 									<li>
-										<a href="#" class="submenu-item-main">Сливочное</a>										
+										<a href="catalog.html" class="submenu-item-main">Сливочное</a>										
 									</li>
 									<li>
 										<a href="#" class="submenu-item-main">Щербеты</a>
@@ -92,8 +91,8 @@
 						</div>
 						<div class="slider-controls">
 							<label for="btn-1"></label>
-           					<label for="btn-2"></label>
-            				<label for="btn-3"></label>
+							<label for="btn-2"></label>
+							<label for="btn-3"></label>
 						</div>
 					</div>
 					<section class="offers clearfix">
@@ -114,7 +113,7 @@
 								<div class="product-item product-hit">
 									<div class="product-item-content">
 										<div class="product-img">
-											<img src="img/orange_jam.jpg" alt="">
+											<img src="img/orange_jam.jpg" width="267" height="267" alt="">
 										</div>
 										<p class="rubles"><span class="ruble">310</span><span class="less">/кг</span></p> 
 										<p class="item"><a href="#"> Сливочное с апельсиновым <br> джемом и цитрусовой стружкой</a></p>
@@ -126,7 +125,7 @@
 								<div class="product-item product-hit">
 									<div class="product-item-content">
 										<div class="product-img">
-											<img src="img/cofee_choco.jpg" alt="">
+											<img src="img/cofee_choco.jpg" width="267" height="267" alt="">
 										</div>
 										<p class="rubles"><span class="ruble">380</span><span class="less">/кг</span></p> 
 										<p class="item"><a href="#">Сливочно-кофейное с кусочками <br> шоколада</a> </p>
@@ -138,7 +137,7 @@
 								<div class="product-item product-hit">
 									<div class="product-item-content">
 										<div class="product-img">
-											<img src="img/strawberry.jpg" alt="">
+											<img src="img/strawberry.jpg" width="267" height="267" alt="">
 										</div>
 										<p class="rubles"><span class="ruble">355</span><span class="less">/кг</span></p> 
 										<p class="item"><a href="#">Сливочно-клубничное с <br> присыпкой из белого шоколада</a></p>
@@ -150,7 +149,7 @@
 								<div class="product-item product-hit">
 									<div class="product-item-content">
 										<div class="product-img">
-											<img src="img/with_caramel.jpg" alt="">
+											<img src="img/with_caramel.jpg" width="267" height="267" alt="">
 										</div>
 										<p class="rubles"><span class="ruble">415</span><span class="less">/кг</span></p> 
 										<p class="item"><a href="#">Сливочное крем-брюле с <br> карамельной подливкой</a></p>
@@ -199,10 +198,10 @@
 			</main>
 			<footer class="footer clearfix">
 				<section class="social">
-					<a href="#" class="tw">tw</a>
-					<a href="#" class="inst">inst</a>  	
-					<a href="#" class="fb">fb</a>	
-					<a href="#" class="vk">vk</a>
+					<a href="#" class="tw">Twitter</a>
+					<a href="#" class="inst">Instagram</a>  	
+					<a href="#" class="fb">Facebook</a>	
+					<a href="#" class="vk">Vkontakte</a>
 				</section>  
 				<section class="footer-navigation">
 					<a href="#" class="contact heart"><b> Для поставщиков</b></a>
@@ -212,12 +211,12 @@
 				</section>	
 				<section class="made">  
 					<a href="#"><img src="img/html-icon.png" class="logo-html" alt=""></a> 			
-					<p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy; 2017</p> 
+					<p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p> 
 				</section>
 			</footer>
 			<div class="modal">
 				<button class="modal-close" type="button" title="Закрыть">Закрыть</button>
-				<form action="#" method="post">
+				<form action="feedback-form.html" method="post">
 					<h5>Мы обязательно вам ответим!</h5>
 					<input type="text" name="name" placeholder="Как вас зовут?">
 					<input type="email" name="e-mail" placeholder="Ваша почта для ответа?">
