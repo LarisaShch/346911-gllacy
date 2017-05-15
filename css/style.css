@@ -1614,7 +1614,7 @@ min-width: 170px;
 .item-active::after {
   content: "";
   position: absolute;
-  top: 39px;
+  top: 40px;
   right: 9px;
   left: 9px;
   height: 1px;
