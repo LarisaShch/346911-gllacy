@@ -5,6 +5,7 @@ body {
   color: #0c0c0c;
   background-color: #849d8f;
   margin: 0;
+  min-width: 1200px;
 }
 body > input[type="radio"] {
   display: none;
@@ -1278,7 +1279,7 @@ vertical-align: top;
 .menu-item a {
   position: relative;
 }
-.menu-item :after { 
+.menu-item:after { 
   content: "";
   position: absolute;       
   left: 13px;
@@ -1617,7 +1618,7 @@ min-width: 170px;
   right: 9px;
   left: 9px;
   height: 2px;
-  background-color: rgba(176, 176, 173, 0.3);
+  background-color: #d1d1ce;
 }
 .menu-link::before {
   content: "";
@@ -1652,4 +1653,16 @@ font-size: 0;
 z-index: -1;
 opacity: 0.3;
 position: relative;
+}
+/*.menu li:hover:after {
+  display:none;
+}
+.menu a:hover:after {
+  display:none;
+}
+ul.submenu:hover:after {
+  display:none;
+}*/
+ul.submenu:after {
+display:none;
 }
